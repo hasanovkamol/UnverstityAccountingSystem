@@ -29,8 +29,11 @@ namespace UnverstityAccountingSystem.AllWindows
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            BankAccount bankAccount = new BankAccount();
-            bankAccount.Show();
+            РегистрацияОрганизации regOrg = new РегистрацияОрганизации();
+            regOrg.Show();
+
+            //BankAccount bankAccount = new BankAccount();
+            //bankAccount.Show();
 
             //Valuta valuta = new Valuta();
             //valuta.Show();

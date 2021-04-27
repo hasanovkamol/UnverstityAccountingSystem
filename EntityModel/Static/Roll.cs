@@ -8,6 +8,6 @@ namespace EntityModel.Static
     {
         Admin,
         Accountant,
-        Manger
+        Adutor
     }
 }

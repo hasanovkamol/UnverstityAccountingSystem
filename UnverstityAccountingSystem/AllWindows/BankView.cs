@@ -32,7 +32,6 @@ namespace UnverstityAccountingSystem.AllWindows
             else
                 GloblMain.BankCurrentId =
                     int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());
-
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

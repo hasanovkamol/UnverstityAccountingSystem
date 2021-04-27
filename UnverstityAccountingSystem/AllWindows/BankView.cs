@@ -28,7 +28,7 @@ namespace UnverstityAccountingSystem.AllWindows
         }
         private void FindDatabaseId()
         {
-            if (dgBank.SelectedCells == null) return;
+            if (dgBank.SelectedCells==null) return;
             else
                 GloblMain.BankCurrentId =
                     int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());

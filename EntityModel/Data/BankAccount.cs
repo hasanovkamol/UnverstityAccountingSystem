@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace EntityModel.Data
@@ -14,7 +15,7 @@ namespace EntityModel.Data
         private DateTime m_ContracTerminationDate;
         private DateTime m_DateofContract;
         private Bank m_GetBook;
-
+        [Key]
         public int BankAccountId { get=>GetValue(nameof(BankAccountId),m_BankAccountId); set=>SetValue(nameof(BankAccountId),ref m_BankAccountId,value); }
         public string Valuta { get => GetValue(nameof(Valuta), m_Valuta); set => SetValue(nameof(Valuta), ref m_Valuta, value); }
         public string AccountNumber { get => GetValue(nameof(AccountNumber), m_AccountNumber); set => SetValue(nameof(AccountNumber), ref m_AccountNumber, value); }

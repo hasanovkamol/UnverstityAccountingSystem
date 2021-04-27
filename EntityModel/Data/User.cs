@@ -1,6 +1,7 @@
 ﻿using EntityModel.Static;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace EntityModel.Data
@@ -12,7 +13,7 @@ namespace EntityModel.Data
         private string m_Login;
         private Roll m_UserRoll;
         private string m_UserName;
-
+        [Key]
         public int UserId { get=>GetValue(nameof(UserId),m_UserId); set=>SetValue(nameof(UserId),ref m_UserId,value); }
         public string UserName { get => GetValue(nameof(UserName), m_UserName); set => SetValue(nameof(UserName), ref m_UserName, value); }
         public Roll UserRoll { get => GetValue(nameof(UserRoll), m_UserRoll); set => SetValue(nameof(UserRoll), ref m_UserRoll, value); }

@@ -26,5 +26,20 @@ namespace UnverstityAccountingSystem.AllWindows
             form1.Show();
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BankAccount bankAccount = new BankAccount();
+            bankAccount.Show();
+
+            //Valuta valuta = new Valuta();
+            //valuta.Show();
+
+            //Bank bank = new Bank();
+            //bank.Show();
+            //РегистрацияОрганизации registr = new РегистрацияОрганизации();
+            //registr.Show();
+            this.Hide();
+        }
     }
 }

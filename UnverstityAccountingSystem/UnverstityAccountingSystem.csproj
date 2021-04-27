@@ -81,11 +81,47 @@
     <Compile Include="AllControls\StudentAdd.Designer.cs">
       <DependentUpon>StudentAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindows\AddBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\AddBank.Designer.cs">
+      <DependentUpon>AddBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\AddEditBankAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\AddEditBankAccount.Designer.cs">
+      <DependentUpon>AddEditBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\BankAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\BankAccount.Designer.cs">
+      <DependentUpon>BankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\BankView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\BankView.Designer.cs">
+      <DependentUpon>BankView.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindows\RegistrationUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AllWindows\RegistrationUser.Designer.cs">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\Valuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\Valuta.Designer.cs">
+      <DependentUpon>Valuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\РегистрацияОрганизации.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\РегистрацияОрганизации.Designer.cs">
+      <DependentUpon>РегистрацияОрганизации.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -108,13 +144,30 @@
     <EmbeddedResource Include="AllControls\StudentAdd.resx">
       <DependentUpon>StudentAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\AddBank.resx">
+      <DependentUpon>AddBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\AddEditBankAccount.resx">
+      <DependentUpon>AddEditBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\BankAccount.resx">
+      <DependentUpon>BankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\BankView.resx">
+      <DependentUpon>BankView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\RegistrationUser.resx">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\Valuta.resx">
+      <DependentUpon>Valuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\РегистрацияОрганизации.resx">
+      <DependentUpon>РегистрацияОрганизации.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -171,6 +224,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityModel\EntityModel.csproj">
+      <Project>{58b4e9c7-9ee1-4174-9264-109bda05e5f7}</Project>
+      <Name>EntityModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

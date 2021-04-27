@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityModel.Static;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,15 @@ namespace UnverstityAccountingSystem
 
         }
        
-        
+        public static Roll ConvertFromEnumIntoString(string value)
+        {
+            switch (value)
+            {
+                case "Admin": return Roll.Admin;
+                case "Adutor": return Roll.Adutor;
+                default:
+                    return Roll.Accountant;
+            }
+        }
     }
 }

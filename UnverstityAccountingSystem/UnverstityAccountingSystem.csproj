@@ -111,6 +111,18 @@
     <Compile Include="AllWindows\RegistrationUser.Designer.cs">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindows\UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\UserRollAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\UserRollAcount.Designer.cs">
+      <DependentUpon>UserRollAcount.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindows\Valuta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\RegistrationUser.resx">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\UserRollAcount.resx">
+      <DependentUpon>UserRollAcount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\Valuta.resx">
       <DependentUpon>Valuta.cs</DependentUpon>

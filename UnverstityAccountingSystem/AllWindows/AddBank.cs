@@ -51,5 +51,10 @@ namespace UnverstityAccountingSystem.AllWindows
             tbMFO.Text = bank.MFO;
             tbTelefon.Text = bank.Telefon;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

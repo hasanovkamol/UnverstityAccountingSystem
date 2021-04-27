@@ -69,12 +69,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(96, 44);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(175, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(166, 18);
             this.materialLabel1.TabIndex = 3;
             this.materialLabel1.Text = "Название организации";
             // 
@@ -89,12 +89,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(50, 26);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(194, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(192, 18);
             this.materialLabel3.TabIndex = 6;
             this.materialLabel3.Text = "Номер банковского счета";
             // 
@@ -199,12 +199,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(50, 99);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(322, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(309, 18);
             this.materialLabel2.TabIndex = 5;
             this.materialLabel2.Text = "Государственный регистрационный номер ";
             // 
@@ -212,12 +212,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel4.Location = new System.Drawing.Point(62, 23);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(72, 19);
+            this.materialLabel4.Size = new System.Drawing.Size(72, 18);
             this.materialLabel4.TabIndex = 6;
             this.materialLabel4.Text = "Телефон";
             // 
@@ -225,12 +225,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel5.Location = new System.Drawing.Point(62, 112);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(56, 19);
+            this.materialLabel5.Size = new System.Drawing.Size(54, 18);
             this.materialLabel5.TabIndex = 7;
             this.materialLabel5.Text = "Адрес ";
             // 
@@ -238,12 +238,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel6.Location = new System.Drawing.Point(62, 69);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(42, 19);
+            this.materialLabel6.Size = new System.Drawing.Size(41, 18);
             this.materialLabel6.TabIndex = 8;
             this.materialLabel6.Text = "ИНН";
             // 
@@ -251,12 +251,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel7.Location = new System.Drawing.Point(62, 172);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(236, 19);
+            this.materialLabel7.Size = new System.Drawing.Size(227, 18);
             this.materialLabel7.TabIndex = 9;
             this.materialLabel7.Text = "Дата регистрации организации ";
             // 
@@ -264,12 +264,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel8.Location = new System.Drawing.Point(50, 165);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(263, 19);
+            this.materialLabel8.Size = new System.Drawing.Size(255, 18);
             this.materialLabel8.TabIndex = 10;
             this.materialLabel8.Text = "Дата государственной регистрации";
             // 
@@ -295,6 +295,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.button2.TabIndex = 44;
             this.button2.Text = "Выход";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnSave
             // 
@@ -310,6 +311,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnSave.TabIndex = 43;
             this.btnSave.Text = "Далее";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox1
             // 

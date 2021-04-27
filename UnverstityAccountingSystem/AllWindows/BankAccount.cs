@@ -23,5 +23,10 @@ namespace UnverstityAccountingSystem.AllWindows
             addEdit.ShowDialog();
            
         }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

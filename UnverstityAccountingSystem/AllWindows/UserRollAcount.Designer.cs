@@ -1,7 +1,7 @@
 ﻿
 namespace UnverstityAccountingSystem.AllWindows
 {
-    partial class BankAccount
+    partial class UserRollAcount
     {
         /// <summary>
         /// Required designer variable.
@@ -30,10 +30,11 @@ namespace UnverstityAccountingSystem.AllWindows
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnAdd = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnSelect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,82 +42,100 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 83);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 88);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 187);
+            this.dataGridView1.Size = new System.Drawing.Size(477, 224);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(228, 332);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 40);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Выход";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSave.Location = new System.Drawing.Point(379, 332);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(131, 40);
+            this.btnSave.TabIndex = 28;
+            this.btnSave.Text = "Готов";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Depth = 0;
-            this.btnDelete.Location = new System.Drawing.Point(348, 32);
+            this.btnDelete.Location = new System.Drawing.Point(329, 29);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(6);
             this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Primary = true;
             this.btnDelete.Size = new System.Drawing.Size(124, 42);
-            this.btnDelete.TabIndex = 25;
+            this.btnDelete.TabIndex = 33;
             this.btnDelete.Text = "Удалить";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
             this.btnUpdate.Depth = 0;
-            this.btnUpdate.Location = new System.Drawing.Point(200, 32);
+            this.btnUpdate.Location = new System.Drawing.Point(181, 29);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
             this.btnUpdate.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Primary = true;
             this.btnUpdate.Size = new System.Drawing.Size(124, 42);
-            this.btnUpdate.TabIndex = 24;
+            this.btnUpdate.TabIndex = 32;
             this.btnUpdate.Text = "Изменить";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
             this.btnAdd.Depth = 0;
-            this.btnAdd.Location = new System.Drawing.Point(52, 32);
+            this.btnAdd.Location = new System.Drawing.Point(33, 29);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
             this.btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Primary = true;
             this.btnAdd.Size = new System.Drawing.Size(124, 42);
-            this.btnAdd.TabIndex = 23;
+            this.btnAdd.TabIndex = 31;
             this.btnAdd.Text = "Добавлять";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnSelect
+            // UserRollAcount
             // 
-            this.btnSelect.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelect.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSelect.Location = new System.Drawing.Point(451, 279);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(142, 40);
-            this.btnSelect.TabIndex = 26;
-            this.btnSelect.Text = "Выбрать";
-            this.btnSelect.UseVisualStyleBackColor = false;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
-            // 
-            // BankAccount
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(637, 348);
-            this.Controls.Add(this.btnSelect);
+            this.ClientSize = new System.Drawing.Size(549, 398);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dataGridView1);
-            this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "BankAccount";
-            this.Text = "BankAccount";
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "UserRollAcount";
+            this.Text = "Cоздать профиль для пользователей ";
+            this.Load += new System.EventHandler(this.UserRollAcount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -125,9 +144,10 @@ namespace UnverstityAccountingSystem.AllWindows
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private MaterialSkin.Controls.MaterialRaisedButton btnDelete;
         private MaterialSkin.Controls.MaterialRaisedButton btnUpdate;
         private MaterialSkin.Controls.MaterialRaisedButton btnAdd;
-        private System.Windows.Forms.Button btnSelect;
     }
 }

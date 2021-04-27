@@ -43,5 +43,19 @@ namespace UnverstityAccountingSystem.AllWindows
         {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            UserRollAcount userRoll = new UserRollAcount();
+            userRoll.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrationUser registration = new RegistrationUser();
+            registration.Show();
+        }
     }
 }

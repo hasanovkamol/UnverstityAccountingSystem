@@ -8,7 +8,7 @@ namespace EntityModel
 {
     public class DbContextEntity:DbContext
     {
-        public DbContextEntity():base("dbUnverst")
+        public DbContextEntity():base("tickets")
         {
 
         }

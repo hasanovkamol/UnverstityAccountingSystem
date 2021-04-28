@@ -45,5 +45,10 @@ namespace UnverstityAccountingSystem.AllControls
         {
 
         }
+
+        private void StudentContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

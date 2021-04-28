@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.Migrations;
 using System.Text;
 
 namespace UnverstityAccountingSystem.Data
 {
+    [Table("BankAccounts")]
     public class BankAccount:DataModel
     {
         private int m_BankAccountId;

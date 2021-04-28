@@ -53,7 +53,7 @@ namespace UnverstityAccountingSystem.AllControls
             studentModel.Surname = tbSName.Text;
             studentModel.Course = int.Parse(cobCourse.SelectedItem.ToString());
             studentModel.FacultetSt = cobFacultet.SelectedItem.ToString();
-            studentModel.EducationalDirectionSt = cobEducationalDirection.SelectedItem.ToString();
+            studentModel.EducationalDirectionSt = tbeducationalDirection.Text;
             studentModel.PaymentAgreement = checkPaymentAgreement.Checked;
             studentModel.Scholarship = chackScholarship.Checked;
 
@@ -62,9 +62,9 @@ namespace UnverstityAccountingSystem.AllControls
         {
             tbFName.Text=studentModel.Name;
             tbSName.Text= studentModel.Surname;
-            studentModel.Course = int.Parse(cobCourse.SelectedItem.ToString());
-            studentModel.FacultetSt = cobFacultet.SelectedItem.ToString();
-            studentModel.EducationalDirectionSt = cobEducationalDirection.SelectedItem.ToString();
+            cobCourse.SelectedItem = studentModel.Course;
+            cobFacultet.SelectedItem = studentModel.FacultetSt;
+            tbeducationalDirection.Text= studentModel.EducationalDirectionSt;
             checkPaymentAgreement.Checked= studentModel.PaymentAgreement;
             chackScholarship.Checked= studentModel.Scholarship;
         }

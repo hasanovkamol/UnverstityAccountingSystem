@@ -118,6 +118,12 @@
     <Compile Include="AllWindows\BankView.Designer.cs">
       <DependentUpon>BankView.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindows\FacultetView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\FacultetView.Designer.cs">
+      <DependentUpon>FacultetView.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindows\RegistrationUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,7 +157,6 @@
     <Compile Include="DataModel.cs" />
     <Compile Include="Data\Bank.cs" />
     <Compile Include="Data\BankAccount.cs" />
-    <Compile Include="Data\EducationalDirection.cs" />
     <Compile Include="Data\Facultet.cs" />
     <Compile Include="Data\Student.cs" />
     <Compile Include="Data\User.cs" />
@@ -172,6 +177,14 @@
     <Compile Include="Migrations\202104281647490_ChangeModelStudent.cs" />
     <Compile Include="Migrations\202104281647490_ChangeModelStudent.designer.cs">
       <DependentUpon>202104281647490_ChangeModelStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104281858115_chang model Facultet.cs" />
+    <Compile Include="Migrations\202104281858115_chang model Facultet.designer.cs">
+      <DependentUpon>202104281858115_chang model Facultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104281913065_new change.cs" />
+    <Compile Include="Migrations\202104281913065_new change.designer.cs">
+      <DependentUpon>202104281913065_new change.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -204,6 +217,9 @@
     <EmbeddedResource Include="AllWindows\BankView.resx">
       <DependentUpon>BankView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\FacultetView.resx">
+      <DependentUpon>FacultetView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\RegistrationUser.resx">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +243,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104281647490_ChangeModelStudent.resx">
       <DependentUpon>202104281647490_ChangeModelStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104281858115_chang model Facultet.resx">
+      <DependentUpon>202104281858115_chang model Facultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104281913065_new change.resx">
+      <DependentUpon>202104281913065_new change.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

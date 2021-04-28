@@ -12,7 +12,7 @@ namespace UnverstityAccountingSystem.AllWindows
 {
     public partial class Valuta : Form
     {
-        EntityModel.Data.Valuta valuta = new EntityModel.Data.Valuta();
+        UnverstityAccountingSystem.Data.Valuta valuta = new UnverstityAccountingSystem.Data.Valuta();
         public Valuta()
         {
             InitializeComponent();

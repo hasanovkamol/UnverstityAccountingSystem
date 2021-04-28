@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnverstityAccountingSystem.Data;
 
 namespace UnverstityAccountingSystem.AllWindows
 {
     public partial class AddEditBankAccount : Form
     {
-        EntityModel.Data.BankAccount account = new EntityModel.Data.BankAccount();
-        EntityModel.Data.Bank bank = new EntityModel.Data.Bank();
+        UnverstityAccountingSystem.Data.BankAccount account = new UnverstityAccountingSystem.Data.BankAccount();
+        Bank bank = new Bank();
         public AddEditBankAccount()
         {
             InitializeComponent();

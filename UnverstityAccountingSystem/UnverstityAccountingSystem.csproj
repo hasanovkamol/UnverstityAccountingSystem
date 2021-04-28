@@ -169,6 +169,10 @@
     <Compile Include="Migrations\202104280345099_CreateDatabse.designer.cs">
       <DependentUpon>202104280345099_CreateDatabse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104281647490_ChangeModelStudent.cs" />
+    <Compile Include="Migrations\202104281647490_ChangeModelStudent.designer.cs">
+      <DependentUpon>202104281647490_ChangeModelStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -220,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104280345099_CreateDatabse.resx">
       <DependentUpon>202104280345099_CreateDatabse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104281647490_ChangeModelStudent.resx">
+      <DependentUpon>202104281647490_ChangeModelStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -286,6 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\log.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

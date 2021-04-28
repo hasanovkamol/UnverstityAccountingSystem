@@ -15,13 +15,35 @@ namespace UnverstityAccountingSystem.AllControls
     {
         public Student()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            Refresh();
         }
-
+        private void Refresh()
+        {
+           dgStudent.DataSource=GloblMain.dbo.Students.ToList();
+        }
         private void AddStudent_Click(object sender, EventArgs e)
         {
             StudentAdd student = new StudentAdd();
             GloblMain.showControl(student, StudentContent);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(dgStudent.SelectedCells[0].FormattedValue.ToString());
+            var studentModel = GloblMain.dbo.Students.Find(id);
+            StudentAdd student = new StudentAdd(studentModel);
+            GloblMain.showControl(student, StudentContent);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Student_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

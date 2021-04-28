@@ -29,86 +29,86 @@ namespace UnverstityAccountingSystem.AllControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgStudent = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
             this.AddStudent = new MaterialSkin.Controls.MaterialRaisedButton();
             this.StudentContent = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgStudent)).BeginInit();
             this.StudentContent.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgStudent
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(709, 278);
-            this.dataGridView1.TabIndex = 0;
+            this.dgStudent.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgStudent.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgStudent.Location = new System.Drawing.Point(58, 117);
+            this.dgStudent.Name = "dgStudent";
+            this.dgStudent.ReadOnly = true;
+            this.dgStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgStudent.Size = new System.Drawing.Size(709, 278);
+            this.dgStudent.TabIndex = 0;
             // 
-            // materialRaisedButton1
+            // btnDelete
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(407, 19);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(159, 50);
-            this.materialRaisedButton1.TabIndex = 1;
-            this.materialRaisedButton1.Text = "Delete";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.btnDelete.Depth = 0;
+            this.btnDelete.Location = new System.Drawing.Point(423, 43);
+            this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Primary = true;
+            this.btnDelete.Size = new System.Drawing.Size(159, 50);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Удалить";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // materialRaisedButton2
+            // btnUpdate
             // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(590, 19);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(159, 50);
-            this.materialRaisedButton2.TabIndex = 2;
-            this.materialRaisedButton2.Text = "details";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialRaisedButton3
-            // 
-            this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(224, 19);
-            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton3.Name = "materialRaisedButton3";
-            this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(159, 50);
-            this.materialRaisedButton3.TabIndex = 3;
-            this.materialRaisedButton3.Text = "Edit";
-            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.btnUpdate.Depth = 0;
+            this.btnUpdate.Location = new System.Drawing.Point(240, 43);
+            this.btnUpdate.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Primary = true;
+            this.btnUpdate.Size = new System.Drawing.Size(159, 50);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Изменять";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AddStudent
             // 
             this.AddStudent.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddStudent.Depth = 0;
             this.AddStudent.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.AddStudent.Location = new System.Drawing.Point(41, 19);
+            this.AddStudent.Location = new System.Drawing.Point(57, 43);
             this.AddStudent.MouseState = MaterialSkin.MouseState.HOVER;
             this.AddStudent.Name = "AddStudent";
             this.AddStudent.Primary = true;
             this.AddStudent.Size = new System.Drawing.Size(159, 50);
             this.AddStudent.TabIndex = 4;
-            this.AddStudent.Text = "+ Add";
+            this.AddStudent.Text = "Добавлять";
             this.AddStudent.UseVisualStyleBackColor = false;
             this.AddStudent.Click += new System.EventHandler(this.AddStudent_Click);
             // 
             // StudentContent
             // 
-            this.StudentContent.Controls.Add(this.materialRaisedButton2);
-            this.StudentContent.Controls.Add(this.dataGridView1);
+            this.StudentContent.Controls.Add(this.dgStudent);
             this.StudentContent.Controls.Add(this.AddStudent);
-            this.StudentContent.Controls.Add(this.materialRaisedButton1);
-            this.StudentContent.Controls.Add(this.materialRaisedButton3);
-            this.StudentContent.Location = new System.Drawing.Point(25, 17);
+            this.StudentContent.Controls.Add(this.btnDelete);
+            this.StudentContent.Controls.Add(this.btnUpdate);
+            this.StudentContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StudentContent.Location = new System.Drawing.Point(0, 0);
             this.StudentContent.Name = "StudentContent";
-            this.StudentContent.Size = new System.Drawing.Size(781, 386);
+            this.StudentContent.Size = new System.Drawing.Size(840, 461);
             this.StudentContent.TabIndex = 5;
             // 
             // Student
@@ -119,8 +119,9 @@ namespace UnverstityAccountingSystem.AllControls
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Student";
-            this.Size = new System.Drawing.Size(840, 420);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(840, 461);
+            this.Load += new System.EventHandler(this.Student_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgStudent)).EndInit();
             this.StudentContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -128,10 +129,9 @@ namespace UnverstityAccountingSystem.AllControls
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
+        private System.Windows.Forms.DataGridView dgStudent;
+        private MaterialSkin.Controls.MaterialRaisedButton btnDelete;
+        private MaterialSkin.Controls.MaterialRaisedButton btnUpdate;
         private MaterialSkin.Controls.MaterialRaisedButton AddStudent;
         private System.Windows.Forms.Panel StudentContent;
     }

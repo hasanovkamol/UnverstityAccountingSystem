@@ -12,7 +12,7 @@ namespace UnverstityAccountingSystem
 {
    public static class GloblMain
     {
-        public static DbContextEntity db { get; set; }
+        public static DbContextEntity dbo { get; set; }
         public static int BankCurrentId { get; set; }
         private static  Control usercontrol { get; set; }
         public static void showControl(Control control, Control Content)

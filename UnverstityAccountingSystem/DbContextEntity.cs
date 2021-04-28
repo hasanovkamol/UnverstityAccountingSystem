@@ -1,10 +1,8 @@
-﻿using EntityModel.Data;
-using System;
-using System.Collections.Generic;
+﻿
 using System.Data.Entity;
-using System.Text;
+using UnverstityAccountingSystem.Data;
 
-namespace EntityModel
+namespace UnverstityAccountingSystem
 {
     public class DbContextEntity:DbContext
     {

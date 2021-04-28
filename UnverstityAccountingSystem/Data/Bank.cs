@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace EntityModel.Data
+namespace UnverstityAccountingSystem.Data
 {
     public class Bank:DataModel
     {
@@ -22,7 +22,7 @@ namespace EntityModel.Data
 
         public override void ApplyChanges()
         {
-            GloblMain
+            
             base.ApplyChanges();
         }
         public bool NotNullModel()

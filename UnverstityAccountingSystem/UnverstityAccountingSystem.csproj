@@ -142,6 +142,15 @@
     <Compile Include="AllWindows\РегистрацияОрганизации.Designer.cs">
       <DependentUpon>РегистрацияОрганизации.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataModel.cs" />
+    <Compile Include="Data\Bank.cs" />
+    <Compile Include="Data\BankAccount.cs" />
+    <Compile Include="Data\EducationalDirection.cs" />
+    <Compile Include="Data\Facultet.cs" />
+    <Compile Include="Data\Student.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\Valuta.cs" />
+    <Compile Include="Data\Оrganization.cs" />
     <Compile Include="DbContextEntity.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -163,6 +172,7 @@
     <Compile Include="AllControls\Student.Designer.cs">
       <DependentUpon>Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Static\Roll.cs" />
     <EmbeddedResource Include="AllControls\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,12 +268,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unnamed.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EntityModel\EntityModel.csproj">
-      <Project>{58b4e9c7-9ee1-4174-9264-109bda05e5f7}</Project>
-      <Name>EntityModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

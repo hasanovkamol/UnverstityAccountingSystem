@@ -30,179 +30,177 @@ namespace UnverstityAccountingSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.searchAll = new System.Windows.Forms.Button();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btStudent = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btStudent = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Content = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tbUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.materialRaisedButton6);
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.materialRaisedButton3);
             this.panel1.Controls.Add(this.materialRaisedButton5);
             this.panel1.Controls.Add(this.materialRaisedButton4);
             this.panel1.Controls.Add(this.btStudent);
             this.panel1.Controls.Add(this.materialRaisedButton2);
-            this.panel1.Controls.Add(this.materialRaisedButton1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 540);
+            this.panel1.Size = new System.Drawing.Size(230, 561);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // materialRaisedButton3
             // 
-            this.panel2.Controls.Add(this.searchAll);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(230, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(845, 54);
-            this.panel2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(487, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 34);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // searchAll
-            // 
-            this.searchAll.AutoSize = true;
-            this.searchAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.searchAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.searchAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchAll.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchAll.Location = new System.Drawing.Point(764, 12);
-            this.searchAll.Name = "searchAll";
-            this.searchAll.Size = new System.Drawing.Size(69, 34);
-            this.searchAll.TabIndex = 2;
-            this.searchAll.Text = "Search";
-            this.searchAll.UseVisualStyleBackColor = false;
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(12, 147);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(206, 42);
-            this.materialRaisedButton1.TabIndex = 6;
-            this.materialRaisedButton1.Text = "ПРОФЕССИЯ";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(12, 201);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(206, 42);
-            this.materialRaisedButton2.TabIndex = 7;
-            this.materialRaisedButton2.Text = "ОРГАНИЗАЦИИ";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            // 
-            // btStudent
-            // 
-            this.btStudent.Depth = 0;
-            this.btStudent.Location = new System.Drawing.Point(12, 255);
-            this.btStudent.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btStudent.Name = "btStudent";
-            this.btStudent.Primary = true;
-            this.btStudent.Size = new System.Drawing.Size(206, 42);
-            this.btStudent.TabIndex = 8;
-            this.btStudent.Text = "Student";
-            this.btStudent.UseVisualStyleBackColor = true;
-            this.btStudent.Click += new System.EventHandler(this.btStudent_Click);
-            // 
-            // materialRaisedButton4
-            // 
-            this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(12, 309);
-            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton4.Name = "materialRaisedButton4";
-            this.materialRaisedButton4.Primary = true;
-            this.materialRaisedButton4.Size = new System.Drawing.Size(206, 42);
-            this.materialRaisedButton4.TabIndex = 9;
-            this.materialRaisedButton4.Text = "СОТРУДНИКИ";
-            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(18, 418);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(190, 52);
+            this.materialRaisedButton3.TabIndex = 11;
+            this.materialRaisedButton3.Text = "БАНКОВСКИЙСЧЕТ";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
             // 
             // materialRaisedButton5
             // 
             this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(12, 363);
+            this.materialRaisedButton5.Location = new System.Drawing.Point(18, 360);
             this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton5.Name = "materialRaisedButton5";
             this.materialRaisedButton5.Primary = true;
-            this.materialRaisedButton5.Size = new System.Drawing.Size(206, 42);
+            this.materialRaisedButton5.Size = new System.Drawing.Size(190, 52);
             this.materialRaisedButton5.TabIndex = 10;
             this.materialRaisedButton5.Text = "ДОЛЖНОСТИ";
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            // 
+            // materialRaisedButton4
+            // 
+            this.materialRaisedButton4.Depth = 0;
+            this.materialRaisedButton4.Location = new System.Drawing.Point(18, 302);
+            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton4.Name = "materialRaisedButton4";
+            this.materialRaisedButton4.Primary = true;
+            this.materialRaisedButton4.Size = new System.Drawing.Size(190, 52);
+            this.materialRaisedButton4.TabIndex = 9;
+            this.materialRaisedButton4.Text = "СОТРУДНИКИ";
+            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            // 
+            // btStudent
+            // 
+            this.btStudent.Depth = 0;
+            this.btStudent.Location = new System.Drawing.Point(18, 244);
+            this.btStudent.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btStudent.Name = "btStudent";
+            this.btStudent.Primary = true;
+            this.btStudent.Size = new System.Drawing.Size(190, 52);
+            this.btStudent.TabIndex = 8;
+            this.btStudent.Text = "Студент";
+            this.btStudent.UseVisualStyleBackColor = true;
+            this.btStudent.Click += new System.EventHandler(this.btStudent_Click);
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(18, 186);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(190, 52);
+            this.materialRaisedButton2.TabIndex = 7;
+            this.materialRaisedButton2.Text = "ОРГАНИЗАЦИИ";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tbUserName);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(230, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(884, 54);
+            this.panel2.TabIndex = 1;
             // 
             // Content
             // 
             this.Content.Location = new System.Drawing.Point(230, 55);
             this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(840, 485);
+            this.Content.Size = new System.Drawing.Size(884, 506);
             this.Content.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UnverstityAccountingSystem.Properties.Resources.sustainability;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(43, 16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(146, 103);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // materialRaisedButton3
+            // linkLabel1
             // 
-            this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(12, 417);
-            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton3.Name = "materialRaisedButton3";
-            this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(206, 42);
-            this.materialRaisedButton3.TabIndex = 11;
-            this.materialRaisedButton3.Text = "БАНКОВСКИЙСЧЕТ";
-            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(75, 479);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(53, 16);
+            this.linkLabel1.TabIndex = 12;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Log out";
             // 
-            // materialRaisedButton6
+            // label1
             // 
-            this.materialRaisedButton6.Depth = 0;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(12, 471);
-            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton6.Name = "materialRaisedButton6";
-            this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(206, 42);
-            this.materialRaisedButton6.TabIndex = 12;
-            this.materialRaisedButton6.Text = "БАНКИ";
-            this.materialRaisedButton6.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Organization Name";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UnverstityAccountingSystem.Properties.Resources.unnamed;
+            this.pictureBox2.Location = new System.Drawing.Point(820, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // tbUserName
+            // 
+            this.tbUserName.AutoSize = true;
+            this.tbUserName.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUserName.Location = new System.Drawing.Point(715, 24);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(99, 16);
+            this.tbUserName.TabIndex = 5;
+            this.tbUserName.Text = "Hasanov Kamol";
+            this.tbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1075, 540);
+            this.ClientSize = new System.Drawing.Size(1114, 561);
             this.Controls.Add(this.Content);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -213,9 +211,11 @@ namespace UnverstityAccountingSystem
             this.Text = "Unverstity Accounting System Center";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,16 +225,16 @@ namespace UnverstityAccountingSystem
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button searchAll;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
         private MaterialSkin.Controls.MaterialRaisedButton btStudent;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private System.Windows.Forms.Panel Content;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label tbUserName;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

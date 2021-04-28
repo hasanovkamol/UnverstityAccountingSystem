@@ -32,6 +32,11 @@ namespace UnverstityAccountingSystem
             Student student = new Student();
             GloblMain.showControl(student, Content);
         }
-       
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+          OrganizatsionInfo organizatsion = new OrganizatsionInfo();
+            GloblMain.showControl(organizatsion, Content);
+        }
     }
 }

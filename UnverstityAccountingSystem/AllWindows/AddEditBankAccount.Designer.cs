@@ -270,9 +270,10 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.tbName);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AddEditBankAccount";
             this.Text = "Добавить банковский счет ";
+            this.Load += new System.EventHandler(this.AddEditBankAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

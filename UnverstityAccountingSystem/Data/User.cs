@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.Migrations;
 using System.Text;
 using UnverstityAccountingSystem.Static;
 
@@ -22,7 +23,13 @@ namespace UnverstityAccountingSystem.Data
         public string Password { get => GetValue(nameof(Password), m_Password); set => SetValue(nameof(Password), ref m_Password, value); }
         public override void ApplyChanges()
         {
+            GloblMain.dbo.Users.AddOrUpdate(this);
             base.ApplyChanges();
+        }
+        public bool NotNullModel()
+        {
+            if (m_UserName.Length > 0 && m_Login.Length > 0 && m_Password.Length > 0) return true;
+            else return false;
         }
     }
 }

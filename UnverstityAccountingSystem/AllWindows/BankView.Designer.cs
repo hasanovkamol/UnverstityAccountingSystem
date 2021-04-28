@@ -29,7 +29,6 @@ namespace UnverstityAccountingSystem.AllWindows
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -98,14 +97,6 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.dgBank.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgBank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgBank.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgBank.Location = new System.Drawing.Point(30, 81);
             this.dgBank.Name = "dgBank";
             this.dgBank.ReadOnly = true;
@@ -123,9 +114,10 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgBank);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "BankView";
             this.Text = "BankView";
+            this.Load += new System.EventHandler(this.BankView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgBank)).EndInit();
             this.ResumeLayout(false);
 

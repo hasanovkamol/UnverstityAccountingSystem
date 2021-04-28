@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using UnverstityAccountingSystem.Data;
 
@@ -11,12 +12,14 @@ namespace UnverstityAccountingSystem.AllWindows
         public AddEditBankAccount()
         {
             InitializeComponent();
+            Refresh();
         }
 
         private void btnValuta_Click(object sender, EventArgs e)
         {
             Valuta valuta = new Valuta();
             valuta.ShowDialog();
+            Refresh();
         }
 
         private void btnBank_Click(object sender, EventArgs e)
@@ -54,6 +57,18 @@ namespace UnverstityAccountingSystem.AllWindows
              dtContracTerminationDate.Value= account.ContracTerminationDate;
              tbAccountBalance.Text= account.AccountBalance.ToString();
              dtDateofContract.Value= account.DateofContract;
+        }
+
+        private void AddEditBankAccount_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Refresh()
+        {
+            tbValuta.Items.Clear();
+            foreach(var item in GloblMain.dbo.Valutas.ToList()){
+                tbValuta.Items.Add(item.Name);
+            }
         }
     }
 }

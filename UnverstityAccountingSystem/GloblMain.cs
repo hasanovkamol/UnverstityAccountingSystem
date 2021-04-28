@@ -5,14 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnverstityAccountingSystem.AllWindows;
+using UnverstityAccountingSystem.Data;
 using UnverstityAccountingSystem.Static;
 
 namespace UnverstityAccountingSystem
 {
    public static class GloblMain
     {
-        public static DbContextEntity dbo { get; set; }
-        public static int BankCurrentId { get; set; }
+        public static DbContextEntity dbo=new DbContextEntity();
+        public static int CurrentId { get; set; }
+        public static string VanltaName { get; set; }
         private static  Control usercontrol { get; set; }
         public static void showControl(Control control, Control Content)
         {
@@ -35,5 +37,12 @@ namespace UnverstityAccountingSystem
                     return Roll.Accountant;
             }
         }
+        
+        public static User SingIn(string login,string password)
+        {
+            var _user = dbo.Users.Where(x => x.Login == login && x.Password == password).FirstOrDefault();
+            return _user;
+        }
+    
     }
 }

@@ -7,13 +7,13 @@ namespace UnverstityAccountingSystem.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class DatabaseInital : IMigrationMetadata
+    public sealed partial class CreateDatabse : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DatabaseInital));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateDatabse));
         
         string IMigrationMetadata.Id
         {
-            get { return "202104271722332_DatabaseInital"; }
+            get { return "202104280345099_CreateDatabse"; }
         }
         
         string IMigrationMetadata.Source

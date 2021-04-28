@@ -22,9 +22,15 @@ namespace UnverstityAccountingSystem.AllWindows
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
+            var _user = GloblMain.SingIn(tnLogin.Text, tbPassowrd.Text);
+            if (_user != null)
+            {
+                Form1 form1 = new Form1();
+                form1.Show();
+                this.Hide();
+            }
+            else tbError.Text = "Пользователь не найден";
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -44,5 +50,6 @@ namespace UnverstityAccountingSystem.AllWindows
             //registr.Show();
             this.Hide();
         }
+        
     }
 }

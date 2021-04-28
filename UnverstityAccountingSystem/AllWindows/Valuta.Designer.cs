@@ -29,9 +29,7 @@ namespace UnverstityAccountingSystem.AllWindows
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgValuta = new System.Windows.Forms.DataGridView();
-            this.btnSelect = new System.Windows.Forms.Button();
             this.tbKod = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tbDescreption = new System.Windows.Forms.RichTextBox();
@@ -49,34 +47,13 @@ namespace UnverstityAccountingSystem.AllWindows
             this.dgValuta.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgValuta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgValuta.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgValuta.Location = new System.Drawing.Point(39, 188);
+            this.dgValuta.Location = new System.Drawing.Point(39, 242);
             this.dgValuta.Name = "dgValuta";
             this.dgValuta.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgValuta.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgValuta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgValuta.Size = new System.Drawing.Size(348, 150);
             this.dgValuta.TabIndex = 0;
             this.dgValuta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgValuta_CellClick);
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelect.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSelect.Location = new System.Drawing.Point(245, 347);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(142, 40);
-            this.btnSelect.TabIndex = 25;
-            this.btnSelect.Text = "Выбрать";
-            this.btnSelect.UseVisualStyleBackColor = false;
             // 
             // tbKod
             // 
@@ -90,12 +67,13 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdd.Location = new System.Drawing.Point(344, 112);
+            this.btnAdd.Location = new System.Drawing.Point(39, 179);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(43, 34);
+            this.btnAdd.Size = new System.Drawing.Size(348, 34);
             this.btnAdd.TabIndex = 27;
-            this.btnAdd.Text = "+";
+            this.btnAdd.Text = "Добавлять";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -103,7 +81,7 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.tbDescreption.Location = new System.Drawing.Point(39, 99);
             this.tbDescreption.Name = "tbDescreption";
-            this.tbDescreption.Size = new System.Drawing.Size(299, 47);
+            this.tbDescreption.Size = new System.Drawing.Size(348, 47);
             this.tbDescreption.TabIndex = 28;
             this.tbDescreption.Text = "";
             // 
@@ -151,7 +129,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.tbName.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbName.Location = new System.Drawing.Point(159, 43);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(179, 28);
+            this.tbName.Size = new System.Drawing.Size(228, 28);
             this.tbName.TabIndex = 31;
             // 
             // materialLabel4
@@ -160,7 +138,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(41, 162);
+            this.materialLabel4.Location = new System.Drawing.Point(41, 216);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(123, 19);
@@ -181,7 +159,7 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 404);
+            this.ClientSize = new System.Drawing.Size(421, 418);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
@@ -191,12 +169,12 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.tbDescreption);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbKod);
-            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dgValuta);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Valuta";
             this.Text = "Valuta";
+            this.Load += new System.EventHandler(this.Valuta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgValuta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,7 +184,6 @@ namespace UnverstityAccountingSystem.AllWindows
         #endregion
 
         private System.Windows.Forms.DataGridView dgValuta;
-        private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.TextBox tbKod;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.RichTextBox tbDescreption;

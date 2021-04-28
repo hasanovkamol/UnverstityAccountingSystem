@@ -15,8 +15,12 @@ namespace UnverstityAccountingSystem.AllWindows
         public BankView()
         {
             InitializeComponent();
+            Refresh();
         }
-
+        private void Refresh()
+        {
+            dgBank.DataSource = GloblMain.dbo.Banks.ToList();
+        }
         private void btnSelect_Click(object sender, EventArgs e)
         {
 
@@ -31,15 +35,20 @@ namespace UnverstityAccountingSystem.AllWindows
         {
             if (dgBank.SelectedCells==null) return;
             else
-                GloblMain.BankCurrentId =
+                GloblMain.CurrentId =
                     int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             FindDatabaseId();
-            AddBank addBank = new AddBank(GloblMain.BankCurrentId);
+            AddBank addBank = new AddBank(GloblMain.CurrentId);
             addBank.ShowDialog();
+        }
+
+        private void BankView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

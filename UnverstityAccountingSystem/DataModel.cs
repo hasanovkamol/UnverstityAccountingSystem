@@ -44,7 +44,7 @@ namespace UnverstityAccountingSystem
         }
         public virtual void ApplyChanges()
         {
-            //Global.db.SaveChanges();
+            GloblMain.dbo.SaveChanges();
             HasChanges = false;
         }
     }

@@ -1,14 +1,19 @@
 ﻿
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using UnverstityAccountingSystem.Data;
 
 namespace UnverstityAccountingSystem
 {
     public class DbContextEntity:DbContext
     {
-        public DbContextEntity():base("tickets")
+        public DbContextEntity():base("dbUN")
         {
-
+            
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+           // throw new UnintentionalCodeFirstException();
         }
         public DbSet<Bank> Banks { get; set; }
         public DbSet<User> Users { get; set; }

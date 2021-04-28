@@ -1,11 +1,9 @@
-﻿using System.Data.Entity.Migrations;
-
-
-namespace UnverstityAccountingSystem.Migrations
+﻿namespace UnverstityAccountingSystem.Migrations
 {
+    using System;
+    using System.Data.Entity.Migrations;
     
-    
-    public partial class DatabaseInital : DbMigration
+    public partial class CreateDatabse : DbMigration
     {
         public override void Up()
         {

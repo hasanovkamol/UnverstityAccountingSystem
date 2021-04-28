@@ -40,8 +40,8 @@ namespace UnverstityAccountingSystem
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbUserName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.Content = new System.Windows.Forms.Panel();
+            this.tbOrg = new MaterialSkin.Controls.MaterialLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -74,6 +74,7 @@ namespace UnverstityAccountingSystem
             this.linkLabel1.TabIndex = 12;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Log out";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // materialRaisedButton3
             // 
@@ -149,9 +150,9 @@ namespace UnverstityAccountingSystem
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.tbOrg);
             this.panel2.Controls.Add(this.tbUserName);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(230, 0);
             this.panel2.Name = "panel2";
@@ -179,22 +180,26 @@ namespace UnverstityAccountingSystem
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Organization Name";
-            // 
             // Content
             // 
             this.Content.Location = new System.Drawing.Point(230, 67);
             this.Content.Name = "Content";
             this.Content.Size = new System.Drawing.Size(884, 494);
             this.Content.TabIndex = 2;
+            this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
+            // 
+            // tbOrg
+            // 
+            this.tbOrg.AutoSize = true;
+            this.tbOrg.Depth = 0;
+            this.tbOrg.Font = new System.Drawing.Font("Roboto", 11F);
+            this.tbOrg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tbOrg.Location = new System.Drawing.Point(6, 24);
+            this.tbOrg.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbOrg.Name = "tbOrg";
+            this.tbOrg.Size = new System.Drawing.Size(175, 19);
+            this.tbOrg.TabIndex = 6;
+            this.tbOrg.Text = "Название организации";
             // 
             // Form1
             // 
@@ -235,7 +240,7 @@ namespace UnverstityAccountingSystem
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label tbUserName;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialLabel tbOrg;
     }
 }
 

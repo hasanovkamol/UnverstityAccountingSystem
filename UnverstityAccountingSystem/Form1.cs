@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using UnverstityAccountingSystem.AllControls;
+using UnverstityAccountingSystem.AllWindows;
 
 namespace UnverstityAccountingSystem
 {
@@ -18,6 +19,8 @@ namespace UnverstityAccountingSystem
         public Form1()
         {
             InitializeComponent();
+           
+            //tbOrg.Text += ": " + GloblMain.dbo.Students.Find(0).Name;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,6 +40,18 @@ namespace UnverstityAccountingSystem
         {
             OrganizatsionInfo organizatsion = new OrganizatsionInfo();
             GloblMain.showControl(organizatsion, Content);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegistrationUser user = new RegistrationUser();
+            user.Show();
+            this.Hide();
+        }
+
+        private void Content_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

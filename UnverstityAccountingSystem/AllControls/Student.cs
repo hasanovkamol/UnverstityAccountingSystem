@@ -20,7 +20,7 @@ namespace UnverstityAccountingSystem.AllControls
         }
         private void Refresh()
         {
-           dgStudent.DataSource=GloblMain.dbo.Students.ToList();
+           //dgStudent.DataSource=GloblMain.dbo.Students.ToList();
         }
         private void AddStudent_Click(object sender, EventArgs e)
         {

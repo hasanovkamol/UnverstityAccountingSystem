@@ -23,30 +23,33 @@ namespace UnverstityAccountingSystem.AllWindows
         }
         private void btnSelect_Click(object sender, EventArgs e)
         {
-
+            int id = int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());
+            GloblMain.bank = GloblMain.dbo.Banks.Find(id);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddBank addBank = new AddBank();
             addBank.ShowDialog();
+            Refresh();
         }
-        private void FindDatabaseId()
-        {
-            if (dgBank.SelectedCells==null) return;
-            else
-                GloblMain.CurrentId =
-                    int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());
-        }
+       
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FindDatabaseId();
-            AddBank addBank = new AddBank(GloblMain.CurrentId);
+            int id = int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());
+            var _bank = GloblMain.dbo.Banks.Find(id);
+            AddBank addBank = new AddBank(_bank);
             addBank.ShowDialog();
+            Refresh();
         }
 
         private void BankView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
         {
 
         }

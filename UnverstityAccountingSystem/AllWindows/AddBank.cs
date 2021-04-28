@@ -15,13 +15,14 @@ namespace UnverstityAccountingSystem.AllWindows
     public partial class AddBank : Form
     {
         Bank bank = new Bank();
-        public AddBank(int bankId=0)
+        public AddBank(Bank bank=null)
         {
             InitializeComponent();
-            if (bankId != 0)
+            if (bank != null)
             {
-                //this.bank = bank;
+                this.bank = bank;
                 BindView();
+                btnSave.Text = "Изменить";
             }
         }
 
@@ -32,9 +33,6 @@ namespace UnverstityAccountingSystem.AllWindows
             if (bank.NotNullModel())
             {
                 bank.ApplyChanges();
-                btnSave.Enabled = false;
-                btnSave.BackColor = Color.Gray;
-                btnSave.Text = "Информация сохранена";
             }
             else tbError.Text = "Вы не ввели данные полностью ";
         }

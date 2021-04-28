@@ -14,7 +14,8 @@ namespace UnverstityAccountingSystem
     {
         public static DbContextEntity dbo=new DbContextEntity();
         public static int CurrentId { get; set; }
-        public static string VanltaName { get; set; }
+        public static Bank bank { get; set; }
+        public static UnverstityAccountingSystem.Data.BankAccount bankaccount { get; set; }
         private static  Control usercontrol { get; set; }
         public static void showControl(Control control, Control Content)
         {

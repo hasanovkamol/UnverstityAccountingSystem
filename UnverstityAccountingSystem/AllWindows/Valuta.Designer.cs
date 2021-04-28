@@ -29,7 +29,6 @@ namespace UnverstityAccountingSystem.AllWindows
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgValuta = new System.Windows.Forms.DataGridView();
             this.tbKod = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tbDescreption = new System.Windows.Forms.RichTextBox();
@@ -37,23 +36,8 @@ namespace UnverstityAccountingSystem.AllWindows
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.tbName = new System.Windows.Forms.TextBox();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.lbError = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgValuta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgValuta
-            // 
-            this.dgValuta.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgValuta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgValuta.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgValuta.Location = new System.Drawing.Point(39, 242);
-            this.dgValuta.Name = "dgValuta";
-            this.dgValuta.ReadOnly = true;
-            this.dgValuta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgValuta.Size = new System.Drawing.Size(348, 150);
-            this.dgValuta.TabIndex = 0;
-            this.dgValuta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgValuta_CellClick);
             // 
             // tbKod
             // 
@@ -69,7 +53,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdd.Location = new System.Drawing.Point(39, 179);
+            this.btnAdd.Location = new System.Drawing.Point(39, 176);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(348, 34);
             this.btnAdd.TabIndex = 27;
@@ -132,25 +116,12 @@ namespace UnverstityAccountingSystem.AllWindows
             this.tbName.Size = new System.Drawing.Size(228, 28);
             this.tbName.TabIndex = 31;
             // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(41, 216);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(123, 19);
-            this.materialLabel4.TabIndex = 33;
-            this.materialLabel4.Text = "Список валюты";
-            // 
             // lbError
             // 
             this.lbError.AutoSize = true;
             this.lbError.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbError.ForeColor = System.Drawing.Color.Red;
-            this.lbError.Location = new System.Drawing.Point(78, 149);
+            this.lbError.Location = new System.Drawing.Point(78, 152);
             this.lbError.Name = "lbError";
             this.lbError.Size = new System.Drawing.Size(0, 16);
             this.lbError.TabIndex = 34;
@@ -159,9 +130,8 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 418);
+            this.ClientSize = new System.Drawing.Size(421, 247);
             this.Controls.Add(this.lbError);
-            this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.materialLabel2);
@@ -169,21 +139,17 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.tbDescreption);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbKod);
-            this.Controls.Add(this.dgValuta);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Valuta";
             this.Text = "Valuta";
             this.Load += new System.EventHandler(this.Valuta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgValuta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgValuta;
         private System.Windows.Forms.TextBox tbKod;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.RichTextBox tbDescreption;
@@ -191,7 +157,6 @@ namespace UnverstityAccountingSystem.AllWindows
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.TextBox tbName;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private System.Windows.Forms.Label lbError;
     }
 }

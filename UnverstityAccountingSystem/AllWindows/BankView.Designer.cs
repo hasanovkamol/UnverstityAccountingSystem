@@ -40,6 +40,7 @@ namespace UnverstityAccountingSystem.AllWindows
             // btnSelect
             // 
             this.btnSelect.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSelect.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelect.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -64,6 +65,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnDelete.TabIndex = 30;
             this.btnDelete.Text = "Удалить";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -96,10 +98,12 @@ namespace UnverstityAccountingSystem.AllWindows
             // dgBank
             // 
             this.dgBank.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgBank.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgBank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgBank.Location = new System.Drawing.Point(30, 81);
             this.dgBank.Name = "dgBank";
             this.dgBank.ReadOnly = true;
+            this.dgBank.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgBank.Size = new System.Drawing.Size(540, 187);
             this.dgBank.TabIndex = 27;
             // 
@@ -116,7 +120,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "BankView";
-            this.Text = "BankView";
+            this.Text = "Банк";
             this.Load += new System.EventHandler(this.BankView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgBank)).EndInit();
             this.ResumeLayout(false);

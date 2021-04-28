@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.Migrations;
 using System.Text;
 
 namespace UnverstityAccountingSystem.Data
@@ -26,6 +27,7 @@ namespace UnverstityAccountingSystem.Data
         public Bank GetBank { get=>GetValue(nameof(GetBank), m_GetBook); set=>SetValue(nameof(GetBank),ref m_GetBook,value); }
         public override void ApplyChanges()
         {
+            GloblMain.dbo.BankAccounts.AddOrUpdate(this);
             base.ApplyChanges();
         }
         public bool NotNullMode()

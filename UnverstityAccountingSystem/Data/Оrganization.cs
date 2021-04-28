@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.Migrations;
 using System.Text;
 
 namespace UnverstityAccountingSystem.Data
@@ -29,8 +30,13 @@ namespace UnverstityAccountingSystem.Data
 
         public override void ApplyChanges()
         {
+            GloblMain.dbo.GetОrganizations.AddOrUpdate(this);
             base.ApplyChanges();
         }
-
+        public bool NotNullModel()
+        {
+            if (m_BankAccount.Name.Length>0 && m_Name.Length > 0 && m_INN.Length > 0 && m_NomerGost.Length > 0 && m_Address.Length > 0 && m_Telefon.Length > 0) return true;
+            else return false;
+        }
     }
 }

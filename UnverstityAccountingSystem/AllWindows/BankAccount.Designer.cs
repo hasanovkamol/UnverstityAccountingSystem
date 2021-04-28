@@ -29,29 +29,31 @@ namespace UnverstityAccountingSystem.AllWindows
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgBankAccount = new System.Windows.Forms.DataGridView();
             this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnAdd = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnSelect = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgBankAccount)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgBankAccount
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 83);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 187);
-            this.dataGridView1.TabIndex = 0;
+            this.dgBankAccount.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgBankAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgBankAccount.Location = new System.Drawing.Point(53, 83);
+            this.dgBankAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgBankAccount.Name = "dgBankAccount";
+            this.dgBankAccount.ReadOnly = true;
+            this.dgBankAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgBankAccount.Size = new System.Drawing.Size(540, 187);
+            this.dgBankAccount.TabIndex = 0;
             // 
             // btnDelete
             // 
             this.btnDelete.Depth = 0;
             this.btnDelete.Location = new System.Drawing.Point(348, 32);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Primary = true;
@@ -65,7 +67,7 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.btnUpdate.Depth = 0;
             this.btnUpdate.Location = new System.Drawing.Point(200, 32);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnUpdate.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Primary = true;
@@ -73,12 +75,13 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Изменить";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.Depth = 0;
             this.btnAdd.Location = new System.Drawing.Point(52, 32);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Primary = true;
@@ -91,13 +94,14 @@ namespace UnverstityAccountingSystem.AllWindows
             // btnSelect
             // 
             this.btnSelect.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSelect.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelect.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSelect.Location = new System.Drawing.Point(451, 279);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(142, 40);
+            this.btnSelect.Size = new System.Drawing.Size(141, 40);
             this.btnSelect.TabIndex = 26;
             this.btnSelect.Text = "Выбрать";
             this.btnSelect.UseVisualStyleBackColor = false;
@@ -113,19 +117,19 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgBankAccount);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "BankAccount";
-            this.Text = "BankAccount";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Банковский счет";
+            ((System.ComponentModel.ISupportInitialize)(this.dgBankAccount)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgBankAccount;
         private MaterialSkin.Controls.MaterialRaisedButton btnDelete;
         private MaterialSkin.Controls.MaterialRaisedButton btnUpdate;
         private MaterialSkin.Controls.MaterialRaisedButton btnAdd;

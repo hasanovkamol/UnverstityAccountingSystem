@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.Migrations;
 using System.Text;
 
 namespace UnverstityAccountingSystem.Data
@@ -22,7 +23,7 @@ namespace UnverstityAccountingSystem.Data
 
         public override void ApplyChanges()
         {
-            
+            GloblMain.dbo.Banks.AddOrUpdate(this);
             base.ApplyChanges();
         }
         public bool NotNullModel()

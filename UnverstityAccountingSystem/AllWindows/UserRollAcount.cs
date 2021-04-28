@@ -48,8 +48,8 @@ namespace UnverstityAccountingSystem.AllWindows
         private void btnSave_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form = new Form1();
-            form.Show();
+            RegistrationUser registrationUser = new RegistrationUser();
+            registrationUser.Show();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

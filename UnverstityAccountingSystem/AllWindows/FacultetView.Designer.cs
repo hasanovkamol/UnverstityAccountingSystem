@@ -39,60 +39,66 @@ namespace UnverstityAccountingSystem.AllWindows
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btDirectionDelete = new System.Windows.Forms.Button();
+            this.tbFacultetDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbEducationalDirection
             // 
-            this.tbEducationalDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbEducationalDirection.Location = new System.Drawing.Point(240, 61);
+            this.tbEducationalDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbEducationalDirection.Location = new System.Drawing.Point(266, 60);
             this.tbEducationalDirection.Name = "tbEducationalDirection";
-            this.tbEducationalDirection.Size = new System.Drawing.Size(171, 22);
+            this.tbEducationalDirection.Size = new System.Drawing.Size(171, 29);
             this.tbEducationalDirection.TabIndex = 0;
             // 
             // tbFacultet
             // 
-            this.tbFacultet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbFacultet.Location = new System.Drawing.Point(25, 61);
+            this.tbFacultet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbFacultet.Location = new System.Drawing.Point(25, 60);
             this.tbFacultet.Name = "tbFacultet";
-            this.tbFacultet.Size = new System.Drawing.Size(163, 22);
+            this.tbFacultet.Size = new System.Drawing.Size(157, 29);
             this.tbFacultet.TabIndex = 1;
             // 
             // lsFacultet
             // 
             this.lsFacultet.FormattingEnabled = true;
-            this.lsFacultet.Location = new System.Drawing.Point(25, 96);
+            this.lsFacultet.Location = new System.Drawing.Point(25, 108);
             this.lsFacultet.Name = "lsFacultet";
-            this.lsFacultet.Size = new System.Drawing.Size(197, 147);
+            this.lsFacultet.Size = new System.Drawing.Size(220, 147);
             this.lsFacultet.TabIndex = 2;
             this.lsFacultet.SelectedValueChanged += new System.EventHandler(this.lsFacultet_SelectedValueChanged);
             // 
             // lsEducationalDirection
             // 
             this.lsEducationalDirection.FormattingEnabled = true;
-            this.lsEducationalDirection.Location = new System.Drawing.Point(240, 96);
+            this.lsEducationalDirection.Location = new System.Drawing.Point(267, 108);
             this.lsEducationalDirection.Name = "lsEducationalDirection";
-            this.lsEducationalDirection.Size = new System.Drawing.Size(204, 147);
+            this.lsEducationalDirection.Size = new System.Drawing.Size(227, 147);
             this.lsEducationalDirection.TabIndex = 3;
             this.lsEducationalDirection.SelectedIndexChanged += new System.EventHandler(this.lsEducationalDirection_SelectedIndexChanged);
             // 
             // btnFacultet
             // 
-            this.btnFacultet.Location = new System.Drawing.Point(194, 61);
+            this.btnFacultet.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFacultet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFacultet.Location = new System.Drawing.Point(187, 60);
             this.btnFacultet.Name = "btnFacultet";
-            this.btnFacultet.Size = new System.Drawing.Size(28, 23);
+            this.btnFacultet.Size = new System.Drawing.Size(28, 29);
             this.btnFacultet.TabIndex = 4;
             this.btnFacultet.Text = "+";
-            this.btnFacultet.UseVisualStyleBackColor = true;
+            this.btnFacultet.UseVisualStyleBackColor = false;
             this.btnFacultet.Click += new System.EventHandler(this.btnFacultet_Click);
             // 
             // btnEducationalDirection
             // 
-            this.btnEducationalDirection.Location = new System.Drawing.Point(417, 61);
+            this.btnEducationalDirection.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEducationalDirection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEducationalDirection.Location = new System.Drawing.Point(438, 60);
             this.btnEducationalDirection.Name = "btnEducationalDirection";
-            this.btnEducationalDirection.Size = new System.Drawing.Size(27, 23);
+            this.btnEducationalDirection.Size = new System.Drawing.Size(27, 30);
             this.btnEducationalDirection.TabIndex = 5;
             this.btnEducationalDirection.Text = "+";
-            this.btnEducationalDirection.UseVisualStyleBackColor = true;
+            this.btnEducationalDirection.UseVisualStyleBackColor = false;
             this.btnEducationalDirection.Click += new System.EventHandler(this.btnEducationalDirection_Click);
             // 
             // materialLabel1
@@ -114,7 +120,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(240, 39);
+            this.materialLabel2.Location = new System.Drawing.Point(268, 39);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(105, 19);
@@ -128,7 +134,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(206, 264);
+            this.button1.Location = new System.Drawing.Point(256, 293);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 40);
@@ -143,7 +149,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSave.Location = new System.Drawing.Point(331, 264);
+            this.btnSave.Location = new System.Drawing.Point(381, 293);
             this.btnSave.Margin = new System.Windows.Forms.Padding(6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(113, 40);
@@ -151,11 +157,37 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnSave.Text = "Добавить";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
+            // btDirectionDelete
+            // 
+            this.btDirectionDelete.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btDirectionDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btDirectionDelete.ForeColor = System.Drawing.Color.Red;
+            this.btDirectionDelete.Location = new System.Drawing.Point(467, 60);
+            this.btDirectionDelete.Name = "btDirectionDelete";
+            this.btDirectionDelete.Size = new System.Drawing.Size(27, 30);
+            this.btDirectionDelete.TabIndex = 47;
+            this.btDirectionDelete.Text = "X";
+            this.btDirectionDelete.UseVisualStyleBackColor = false;
+            // 
+            // tbFacultetDelete
+            // 
+            this.tbFacultetDelete.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tbFacultetDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tbFacultetDelete.ForeColor = System.Drawing.Color.Red;
+            this.tbFacultetDelete.Location = new System.Drawing.Point(217, 60);
+            this.tbFacultetDelete.Name = "tbFacultetDelete";
+            this.tbFacultetDelete.Size = new System.Drawing.Size(28, 29);
+            this.tbFacultetDelete.TabIndex = 48;
+            this.tbFacultetDelete.Text = "X";
+            this.tbFacultetDelete.UseVisualStyleBackColor = false;
+            // 
             // FacultetView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 319);
+            this.ClientSize = new System.Drawing.Size(529, 359);
+            this.Controls.Add(this.tbFacultetDelete);
+            this.Controls.Add(this.btDirectionDelete);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.materialLabel2);
@@ -168,6 +200,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.tbEducationalDirection);
             this.Name = "FacultetView";
             this.Text = "FacultetView";
+            this.Load += new System.EventHandler(this.FacultetView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +218,7 @@ namespace UnverstityAccountingSystem.AllWindows
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btDirectionDelete;
+        private System.Windows.Forms.Button tbFacultetDelete;
     }
 }

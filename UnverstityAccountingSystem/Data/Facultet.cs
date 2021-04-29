@@ -13,13 +13,12 @@ namespace UnverstityAccountingSystem.Data
         private int m_FacultetId;
         private string m_Name;
         private List<string> m_educationalDirections;
+        private ICollection<Direction> m_FacultetDirections;
 
         [Key]
         public int FacultetId { get=>GetValue(nameof(FacultetId),m_FacultetId); set=>SetValue(nameof(Facultet), ref m_FacultetId, value); }
-        public string Name { get => GetValue(nameof(Name), m_Name); set => SetValue(nameof(Name), ref m_Name, value); }
-        [Column("Directions")]
-        public virtual List<string> educationalDirections { get => GetValue(nameof(educationalDirections), m_educationalDirections); set => SetValue(nameof(educationalDirections), ref m_educationalDirections, value); }
-
+        public string Name { get => GetValue(nameof(Name), m_Name); set => SetValue(nameof(Name), ref m_Name, value); }  
+        public ICollection<Direction> FacultetDirections { get=>GetValue(nameof(FacultetDirections), m_FacultetDirections); set=>SetValue(nameof(FacultetDirections),ref m_FacultetDirections, value); }
         public override void ApplyChanges()
         {
             GloblMain.dbo.Facultets.AddOrUpdate(this);

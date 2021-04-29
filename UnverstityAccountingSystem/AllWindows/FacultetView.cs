@@ -22,15 +22,15 @@ namespace UnverstityAccountingSystem.AllWindows
         private List<Data.Facultet> Facultets = new List<Data.Facultet>();
         private void Refresh()
         {
-            Facultets = GloblMain.dbo.Facultets.ToList();
-            lsEducationalDirection.Items.Add(Facultets.Where(x => x.Name == lsFacultet.SelectedItem.ToString()));
+            //Facultets = GloblMain.dbo.Facultets.ToList();
+            //lsEducationalDirection.Items.Add(Facultets.Where(x => x.Name == lsFacultet.SelectedItem.ToString()));
         }
         private void lsFacultet_SelectedValueChanged(object sender, EventArgs e)
         {
-            tbFacultet.Text = lsFacultet.SelectedValue.ToString();
-            lsEducationalDirection.Items.Clear();
-            facultet = Facultets.Where(x => x.Name == tbFacultet.Text).FirstOrDefault();
-            lsEducationalDirection.Items.Add(facultet.educationalDirections);
+            //tbFacultet.Text = lsFacultet.SelectedValue.ToString();
+            //lsEducationalDirection.Items.Clear();
+            //facultet = Facultets.Where(x => x.Name == tbFacultet.Text).FirstOrDefault();
+            //lsEducationalDirection.Items.Add(facultet.educationalDirections);
         }
 
         private void lsEducationalDirection_SelectedIndexChanged(object sender, EventArgs e)
@@ -54,12 +54,17 @@ namespace UnverstityAccountingSystem.AllWindows
         {
             if (tbEducationalDirection.Text.Length > 0)
             {
-                lsEducationalDirection.Items.Add(tbEducationalDirection.Text);         
-                facultet.educationalDirections.Add(tbEducationalDirection.Text);
-                facultet.ApplyChanges();
+                //lsEducationalDirection.Items.Add(tbEducationalDirection.Text);         
+                //facultet.educationalDirections.Add(tbEducationalDirection.Text);
+                //facultet.ApplyChanges();
                 Refresh();
 
             }
+
+        }
+
+        private void FacultetView_Load(object sender, EventArgs e)
+        {
 
         }
     }

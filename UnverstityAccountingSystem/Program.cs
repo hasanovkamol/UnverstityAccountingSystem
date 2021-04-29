@@ -17,7 +17,7 @@ namespace UnverstityAccountingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FacultetView());
+            Application.Run(new Form1());
         }
     }
 }

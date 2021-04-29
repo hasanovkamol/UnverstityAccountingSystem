@@ -44,6 +44,7 @@ namespace UnverstityAccountingSystem
             var _user = dbo.Users.Where(x => x.Login == login && x.Password == password).FirstOrDefault();
             return _user;
         }
+        
        
     }
 }

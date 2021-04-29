@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnverstityAccountingSystem.AllWindows;
 
 namespace UnverstityAccountingSystem.AllControls
 {
@@ -20,6 +21,11 @@ namespace UnverstityAccountingSystem.AllControls
             {
                 this.studentModel = student;
                 BindView();
+            }
+            cobFacultet.Items.Clear();
+            foreach (var item in GloblMain.dbo.Facultets.ToList())
+            {
+                cobFacultet.Items.Add(item.Name);
             }
         }
 
@@ -53,7 +59,7 @@ namespace UnverstityAccountingSystem.AllControls
             studentModel.Surname = tbSName.Text;
             studentModel.Course = int.Parse(cobCourse.SelectedItem.ToString());
             studentModel.FacultetSt = cobFacultet.SelectedItem.ToString();
-            studentModel.EducationalDirectionSt = tbeducationalDirection.Text;
+            studentModel.EducationalDirectionSt = cobDirection.SelectedItem.ToString();
             studentModel.PaymentAgreement = checkPaymentAgreement.Checked;
             studentModel.Scholarship = chackScholarship.Checked;
 
@@ -64,14 +70,39 @@ namespace UnverstityAccountingSystem.AllControls
             tbSName.Text= studentModel.Surname;
             cobCourse.SelectedItem = studentModel.Course;
             cobFacultet.SelectedItem = studentModel.FacultetSt;
-            tbeducationalDirection.Text= studentModel.EducationalDirectionSt;
+            cobDirection.SelectedItem = studentModel.EducationalDirectionSt;
             checkPaymentAgreement.Checked= studentModel.PaymentAgreement;
             chackScholarship.Checked= studentModel.Scholarship;
         }
 
         private void btnAddFacultet_Click(object sender, EventArgs e)
         {
+            FacultetView facultetView = new FacultetView();
+            facultetView.ShowDialog();
+            cobFacultet.Items.Clear();
+            foreach (var item in GloblMain.dbo.Facultets.ToList())
+            {
+                cobFacultet.Items.Add(item.Name);
+            }
+        }
 
+        private void cobFacultet_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (cobFacultet.Items.Count == 0) return;
+            else
+            {
+                cobDirection.Items.Clear();
+                int id = FindFacultet(cobFacultet.SelectedItem.ToString());
+                foreach (var item in GloblMain.dbo.Directions.ToList().Where(x => x.FacultetId ==id))
+                {
+                    cobDirection.Items.Add(item.Name);
+                }
+            }
+            
+        }
+        private int FindFacultet(string name)
+        {
+           return GloblMain.dbo.Facultets.ToList().Where(x => x.Name == name).FirstOrDefault().FacultetId;
         }
     }
 }

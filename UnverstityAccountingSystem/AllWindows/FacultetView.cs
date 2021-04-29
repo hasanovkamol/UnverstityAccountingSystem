@@ -14,58 +14,117 @@ namespace UnverstityAccountingSystem.AllWindows
     public partial class FacultetView : Form
     {
         Data.Facultet facultet = new Data.Facultet();
+        private int id;
         public FacultetView()
         {
             InitializeComponent();
             Refresh();
+            timer1.Start();
         }
         private List<Data.Facultet> Facultets = new List<Data.Facultet>();
         private void Refresh()
         {
-            //Facultets = GloblMain.dbo.Facultets.ToList();
-            //lsEducationalDirection.Items.Add(Facultets.Where(x => x.Name == lsFacultet.SelectedItem.ToString()));
+            dgFacultet.DataSource= GloblMain.dbo.Facultets.ToList();
         }
-        private void lsFacultet_SelectedValueChanged(object sender, EventArgs e)
+        private void RefreshSelect()
         {
-            //tbFacultet.Text = lsFacultet.SelectedValue.ToString();
-            //lsEducationalDirection.Items.Clear();
-            //facultet = Facultets.Where(x => x.Name == tbFacultet.Text).FirstOrDefault();
-            //lsEducationalDirection.Items.Add(facultet.educationalDirections);
-        }
-
-        private void lsEducationalDirection_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            tbEducationalDirection.Text = lsEducationalDirection.SelectedItem.ToString();
+            if (GloblMain.dbo.Facultets.Count() == 0) return;
+            else
+            {
+                id = int.Parse(dgFacultet.SelectedCells[0].FormattedValue.ToString());
+                tbFacultet.Text = dgFacultet.SelectedCells[1].FormattedValue.ToString();
+                dgDirection.DataSource = GloblMain.dbo.Directions.ToList().Where(x => x.FacultetId == id).ToList(); ;
+            }
         }
 
         private void btnFacultet_Click(object sender, EventArgs e)
         {
-            if(tbFacultet.Text.Length>0)
+            if (FindStringDatabase(tbFacultet.Text))
             {
                 Facultet facultet = new Facultet();
-                lsFacultet.Items.Add(tbFacultet.Text);
                 facultet.Name = tbFacultet.Text;
                 facultet.ApplyChanges();
-                Refresh();
+                dgFacultet.DataSource = GloblMain.dbo.Facultets.ToList();
             }
+            else tbError.Text = "Попытка не удалась ";
+        }
+        private bool FindStringDatabase(string value)
+        {
+            var xx=GloblMain.dbo.Facultets.ToList().Where(x=>x.Name==value).ToList().FirstOrDefault();
+            return xx == null ? true : false;
         }
 
         private void btnEducationalDirection_Click(object sender, EventArgs e)
         {
-            if (tbEducationalDirection.Text.Length > 0)
+            id = int.Parse(dgFacultet.SelectedCells[0].FormattedValue.ToString());
+            if (FindStringDatabase(tbEducationalDirection.Text,id))
             {
-                //lsEducationalDirection.Items.Add(tbEducationalDirection.Text);         
-                //facultet.educationalDirections.Add(tbEducationalDirection.Text);
-                //facultet.ApplyChanges();
-                Refresh();
+                Direction direction = new Direction();
+                direction.FacultetId = id;
+                direction.Name = tbEducationalDirection.Text;
+                direction.ApplyChanges();
+                dgDirection.DataSource = GloblMain.dbo.Directions.ToList().Where(x=>x.FacultetId==id).ToList();
 
             }
+            else tbError.Text = "Попытка не удалась ";
 
+        }
+        private bool FindStringDatabase(string value,int id)
+        {
+            var xx = GloblMain.dbo.Directions.ToList().Where(x => x.Name == value && x.FacultetId==id).ToList().FirstOrDefault();
+            return xx == null ? true : false;
         }
 
         private void FacultetView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgFacultet_Click(object sender, EventArgs e)
+        {
+            RefreshSelect();
+        }
+
+        private void dgDirection_Click(object sender, EventArgs e)
+        {
+            if (GloblMain.dbo.Directions.Count() == 0) return;
+            else
+            {
+                tbEducationalDirection.Text = dgDirection.SelectedCells[1].FormattedValue.ToString();
+            }
+        }
+
+        private void tbFacultetDelete_Click(object sender, EventArgs e)
+        {
+            id = int.Parse(dgFacultet.SelectedCells[0].FormattedValue.ToString());
+            if(id>0)
+            {
+                var facultet = GloblMain.dbo.Facultets.Find(id);
+                if (facultet == null) return;
+                else GloblMain.dbo.Facultets.Remove(facultet);
+                
+            }
+            GloblMain.dbo.SaveChanges();
+            Refresh();
+        }
+
+        private void btDirectionDelete_Click(object sender, EventArgs e)
+        {
+            id = int.Parse(dgDirection.SelectedCells[0].FormattedValue.ToString());
+            if (id > 0)
+            {
+                var direction = GloblMain.dbo.Directions.Find(id);
+                if (direction == null) return;
+                else GloblMain.dbo.Directions.Remove(direction);
+
+            }
+            GloblMain.dbo.SaveChanges();
+            RefreshSelect();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tbError.Text = "";
         }
     }
 }

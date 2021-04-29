@@ -29,10 +29,9 @@ namespace UnverstityAccountingSystem.AllWindows
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tbEducationalDirection = new System.Windows.Forms.TextBox();
             this.tbFacultet = new System.Windows.Forms.TextBox();
-            this.lsFacultet = new System.Windows.Forms.ListBox();
-            this.lsEducationalDirection = new System.Windows.Forms.ListBox();
             this.btnFacultet = new System.Windows.Forms.Button();
             this.btnEducationalDirection = new System.Windows.Forms.Button();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -41,14 +40,20 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnSave = new System.Windows.Forms.Button();
             this.btDirectionDelete = new System.Windows.Forms.Button();
             this.tbFacultetDelete = new System.Windows.Forms.Button();
+            this.dgFacultet = new System.Windows.Forms.DataGridView();
+            this.dgDirection = new System.Windows.Forms.DataGridView();
+            this.tbError = new MaterialSkin.Controls.MaterialLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgFacultet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDirection)).BeginInit();
             this.SuspendLayout();
             // 
             // tbEducationalDirection
             // 
             this.tbEducationalDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbEducationalDirection.Location = new System.Drawing.Point(266, 60);
+            this.tbEducationalDirection.Location = new System.Drawing.Point(288, 60);
             this.tbEducationalDirection.Name = "tbEducationalDirection";
-            this.tbEducationalDirection.Size = new System.Drawing.Size(171, 29);
+            this.tbEducationalDirection.Size = new System.Drawing.Size(175, 29);
             this.tbEducationalDirection.TabIndex = 0;
             // 
             // tbFacultet
@@ -56,34 +61,16 @@ namespace UnverstityAccountingSystem.AllWindows
             this.tbFacultet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbFacultet.Location = new System.Drawing.Point(25, 60);
             this.tbFacultet.Name = "tbFacultet";
-            this.tbFacultet.Size = new System.Drawing.Size(157, 29);
+            this.tbFacultet.Size = new System.Drawing.Size(175, 29);
             this.tbFacultet.TabIndex = 1;
-            // 
-            // lsFacultet
-            // 
-            this.lsFacultet.FormattingEnabled = true;
-            this.lsFacultet.Location = new System.Drawing.Point(25, 108);
-            this.lsFacultet.Name = "lsFacultet";
-            this.lsFacultet.Size = new System.Drawing.Size(220, 147);
-            this.lsFacultet.TabIndex = 2;
-            this.lsFacultet.SelectedValueChanged += new System.EventHandler(this.lsFacultet_SelectedValueChanged);
-            // 
-            // lsEducationalDirection
-            // 
-            this.lsEducationalDirection.FormattingEnabled = true;
-            this.lsEducationalDirection.Location = new System.Drawing.Point(267, 108);
-            this.lsEducationalDirection.Name = "lsEducationalDirection";
-            this.lsEducationalDirection.Size = new System.Drawing.Size(227, 147);
-            this.lsEducationalDirection.TabIndex = 3;
-            this.lsEducationalDirection.SelectedIndexChanged += new System.EventHandler(this.lsEducationalDirection_SelectedIndexChanged);
             // 
             // btnFacultet
             // 
             this.btnFacultet.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnFacultet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFacultet.Location = new System.Drawing.Point(187, 60);
+            this.btnFacultet.Location = new System.Drawing.Point(206, 60);
             this.btnFacultet.Name = "btnFacultet";
-            this.btnFacultet.Size = new System.Drawing.Size(28, 29);
+            this.btnFacultet.Size = new System.Drawing.Size(29, 29);
             this.btnFacultet.TabIndex = 4;
             this.btnFacultet.Text = "+";
             this.btnFacultet.UseVisualStyleBackColor = false;
@@ -93,9 +80,9 @@ namespace UnverstityAccountingSystem.AllWindows
             // 
             this.btnEducationalDirection.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEducationalDirection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEducationalDirection.Location = new System.Drawing.Point(438, 60);
+            this.btnEducationalDirection.Location = new System.Drawing.Point(469, 60);
             this.btnEducationalDirection.Name = "btnEducationalDirection";
-            this.btnEducationalDirection.Size = new System.Drawing.Size(27, 30);
+            this.btnEducationalDirection.Size = new System.Drawing.Size(29, 29);
             this.btnEducationalDirection.TabIndex = 5;
             this.btnEducationalDirection.Text = "+";
             this.btnEducationalDirection.UseVisualStyleBackColor = false;
@@ -120,7 +107,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(268, 39);
+            this.materialLabel2.Location = new System.Drawing.Point(290, 39);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(105, 19);
@@ -134,10 +121,10 @@ namespace UnverstityAccountingSystem.AllWindows
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(256, 293);
+            this.button1.Location = new System.Drawing.Point(248, 285);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 40);
+            this.button1.Size = new System.Drawing.Size(134, 40);
             this.button1.TabIndex = 46;
             this.button1.Text = "Выход";
             this.button1.UseVisualStyleBackColor = false;
@@ -149,12 +136,12 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSave.Location = new System.Drawing.Point(381, 293);
+            this.btnSave.Location = new System.Drawing.Point(394, 285);
             this.btnSave.Margin = new System.Windows.Forms.Padding(6);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(113, 40);
+            this.btnSave.Size = new System.Drawing.Size(134, 40);
             this.btnSave.TabIndex = 45;
-            this.btnSave.Text = "Добавить";
+            this.btnSave.Text = "Подтверждение";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // btDirectionDelete
@@ -162,30 +149,74 @@ namespace UnverstityAccountingSystem.AllWindows
             this.btDirectionDelete.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btDirectionDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btDirectionDelete.ForeColor = System.Drawing.Color.Red;
-            this.btDirectionDelete.Location = new System.Drawing.Point(467, 60);
+            this.btDirectionDelete.Location = new System.Drawing.Point(499, 60);
             this.btDirectionDelete.Name = "btDirectionDelete";
-            this.btDirectionDelete.Size = new System.Drawing.Size(27, 30);
+            this.btDirectionDelete.Size = new System.Drawing.Size(29, 29);
             this.btDirectionDelete.TabIndex = 47;
             this.btDirectionDelete.Text = "X";
             this.btDirectionDelete.UseVisualStyleBackColor = false;
+            this.btDirectionDelete.Click += new System.EventHandler(this.btDirectionDelete_Click);
             // 
             // tbFacultetDelete
             // 
             this.tbFacultetDelete.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbFacultetDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tbFacultetDelete.ForeColor = System.Drawing.Color.Red;
-            this.tbFacultetDelete.Location = new System.Drawing.Point(217, 60);
+            this.tbFacultetDelete.Location = new System.Drawing.Point(236, 60);
             this.tbFacultetDelete.Name = "tbFacultetDelete";
-            this.tbFacultetDelete.Size = new System.Drawing.Size(28, 29);
+            this.tbFacultetDelete.Size = new System.Drawing.Size(29, 29);
             this.tbFacultetDelete.TabIndex = 48;
             this.tbFacultetDelete.Text = "X";
             this.tbFacultetDelete.UseVisualStyleBackColor = false;
+            this.tbFacultetDelete.Click += new System.EventHandler(this.tbFacultetDelete_Click);
+            // 
+            // dgFacultet
+            // 
+            this.dgFacultet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgFacultet.Location = new System.Drawing.Point(25, 112);
+            this.dgFacultet.Name = "dgFacultet";
+            this.dgFacultet.ReadOnly = true;
+            this.dgFacultet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgFacultet.Size = new System.Drawing.Size(240, 150);
+            this.dgFacultet.TabIndex = 49;
+            this.dgFacultet.Click += new System.EventHandler(this.dgFacultet_Click);
+            // 
+            // dgDirection
+            // 
+            this.dgDirection.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgDirection.Location = new System.Drawing.Point(288, 112);
+            this.dgDirection.Name = "dgDirection";
+            this.dgDirection.ReadOnly = true;
+            this.dgDirection.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgDirection.Size = new System.Drawing.Size(240, 150);
+            this.dgDirection.TabIndex = 50;
+            this.dgDirection.Click += new System.EventHandler(this.dgDirection_Click);
+            // 
+            // tbError
+            // 
+            this.tbError.AutoSize = true;
+            this.tbError.Depth = 0;
+            this.tbError.Font = new System.Drawing.Font("Roboto", 11F);
+            this.tbError.ForeColor = System.Drawing.Color.Red;
+            this.tbError.Location = new System.Drawing.Point(28, 270);
+            this.tbError.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbError.Name = "tbError";
+            this.tbError.Size = new System.Drawing.Size(0, 19);
+            this.tbError.TabIndex = 51;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FacultetView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 359);
+            this.ClientSize = new System.Drawing.Size(555, 350);
+            this.Controls.Add(this.tbError);
+            this.Controls.Add(this.dgDirection);
+            this.Controls.Add(this.dgFacultet);
             this.Controls.Add(this.tbFacultetDelete);
             this.Controls.Add(this.btDirectionDelete);
             this.Controls.Add(this.button1);
@@ -194,13 +225,13 @@ namespace UnverstityAccountingSystem.AllWindows
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.btnEducationalDirection);
             this.Controls.Add(this.btnFacultet);
-            this.Controls.Add(this.lsEducationalDirection);
-            this.Controls.Add(this.lsFacultet);
             this.Controls.Add(this.tbFacultet);
             this.Controls.Add(this.tbEducationalDirection);
             this.Name = "FacultetView";
             this.Text = "FacultetView";
             this.Load += new System.EventHandler(this.FacultetView_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgFacultet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDirection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,8 +241,6 @@ namespace UnverstityAccountingSystem.AllWindows
 
         private System.Windows.Forms.TextBox tbEducationalDirection;
         private System.Windows.Forms.TextBox tbFacultet;
-        private System.Windows.Forms.ListBox lsFacultet;
-        private System.Windows.Forms.ListBox lsEducationalDirection;
         private System.Windows.Forms.Button btnFacultet;
         private System.Windows.Forms.Button btnEducationalDirection;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
@@ -220,5 +249,9 @@ namespace UnverstityAccountingSystem.AllWindows
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btDirectionDelete;
         private System.Windows.Forms.Button tbFacultetDelete;
+        private System.Windows.Forms.DataGridView dgFacultet;
+        private System.Windows.Forms.DataGridView dgDirection;
+        private MaterialSkin.Controls.MaterialLabel tbError;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
@@ -13,7 +15,8 @@ namespace UnverstityAccountingSystem.Data
         private string m_Name;
         private int m_FacultetId;
         private  Facultet m_facultet;
-
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get=>GetValue(nameof(Id),m_Id); set=>SetValue(nameof(Id), ref m_Id, value); }
         public string Name { get=>GetValue(nameof(Name), m_Name); set=>SetValue(nameof(Name),ref m_Name, value); }
         public int FacultetId { get=>GetValue(nameof(FacultetId),m_FacultetId); set=>SetValue(nameof(FacultetId), ref m_FacultetId, value); }

@@ -16,6 +16,7 @@ namespace UnverstityAccountingSystem.Data
         private ICollection<Direction> m_FacultetDirections;
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int FacultetId { get=>GetValue(nameof(FacultetId),m_FacultetId); set=>SetValue(nameof(Facultet), ref m_FacultetId, value); }
         public string Name { get => GetValue(nameof(Name), m_Name); set => SetValue(nameof(Name), ref m_Name, value); }  
         public ICollection<Direction> FacultetDirections { get=>GetValue(nameof(FacultetDirections), m_FacultetDirections); set=>SetValue(nameof(FacultetDirections),ref m_FacultetDirections, value); }

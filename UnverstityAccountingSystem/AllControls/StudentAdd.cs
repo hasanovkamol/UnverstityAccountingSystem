@@ -13,8 +13,8 @@ namespace UnverstityAccountingSystem.AllControls
 {
     public partial class StudentAdd : UserControl
     {
-        UnverstityAccountingSystem.Data.Student studentModel = new UnverstityAccountingSystem.Data.Student();
-        public StudentAdd(UnverstityAccountingSystem.Data.Student  student=null)
+        Data.Student studentModel = new Data.Student();
+        public StudentAdd(Data.Student  student=null)
         {
             InitializeComponent();
             if(student!=null)
@@ -36,7 +36,7 @@ namespace UnverstityAccountingSystem.AllControls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Student student = new Student();
+            StudentView student = new StudentView();
             GloblMain.showControl(student, Content);
         }
 
@@ -46,7 +46,7 @@ namespace UnverstityAccountingSystem.AllControls
             if (studentModel.NotNullModel())
             {
                 studentModel.ApplyChanges();
-                Student student = new Student();
+                StudentView student = new StudentView();
                 GloblMain.showControl(student, Content);
             }
             else tbError.Text = "Введите данные полностью ";

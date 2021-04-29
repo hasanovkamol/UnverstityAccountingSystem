@@ -32,7 +32,7 @@ namespace UnverstityAccountingSystem
         // Studentu for Click Event
         private void btStudent_Click(object sender, EventArgs e)
         {
-            Student student = new Student();
+            StudentView student = new StudentView();
             GloblMain.showControl(student, Content);
         }
 

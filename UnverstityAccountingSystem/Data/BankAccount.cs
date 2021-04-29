@@ -19,6 +19,7 @@ namespace UnverstityAccountingSystem.Data
         private DateTime m_DateofContract;
         private Bank m_GetBook;
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int BankAccountId { get=>GetValue(nameof(BankAccountId),m_BankAccountId); set=>SetValue(nameof(BankAccountId),ref m_BankAccountId,value); }
         public string Valuta { get => GetValue(nameof(Valuta), m_Valuta); set => SetValue(nameof(Valuta), ref m_Valuta, value); }
         public string AccountNumber { get => GetValue(nameof(AccountNumber), m_AccountNumber); set => SetValue(nameof(AccountNumber), ref m_AccountNumber, value); }

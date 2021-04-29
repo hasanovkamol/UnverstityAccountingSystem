@@ -15,6 +15,7 @@ namespace UnverstityAccountingSystem.Data
         private string m_Descreption;
         private string m_ValutaKod;
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ValutaId { get=>GetValue(nameof(ValutaId),m_ValutaId); set=>SetValue(nameof(ValutaId), ref m_ValutaId,value); }
         public string ValutaKod { get=>GetValue(nameof(ValutaKod),m_ValutaKod); set=>SetValue(nameof(ValutaKod), ref m_ValutaKod,value); }
         public string Name { get => GetValue(nameof(Name), m_Name); set => SetValue(nameof(Name), ref m_Name, value); }

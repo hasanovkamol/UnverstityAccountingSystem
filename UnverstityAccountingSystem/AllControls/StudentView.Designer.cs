@@ -1,7 +1,7 @@
 ﻿
 namespace UnverstityAccountingSystem.AllControls
 {
-    partial class Student
+    partial class StudentView
     {
         /// <summary> 
         /// Required designer variable.

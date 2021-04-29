@@ -19,6 +19,7 @@ namespace UnverstityAccountingSystem.Data
         private bool m_Scholarship;
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int StudentId { get=>GetValue(nameof(StudentId),m_StudentId); set=>SetValue(nameof(StudentId), ref m_StudentId,value); }
         public string Name { get => GetValue(nameof(Name), m_Name); set => SetValue(nameof(Name), ref m_Name, value); }
         public string Surname { get => GetValue(nameof(Surname), m_Surname); set => SetValue(nameof(Surname), ref m_Surname, value); }

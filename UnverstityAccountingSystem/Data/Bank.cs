@@ -17,6 +17,7 @@ namespace UnverstityAccountingSystem.Data
         private int m_BankId;
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int BankId { get => GetValue(nameof(BankId), m_BankId); set => SetValue(nameof(BankId), ref m_BankId, value); }
         public string Name { get=>GetValue(nameof(Name),m_Name); set=>SetValue(nameof(Name), ref m_Name,value); }
         public string Address { get => GetValue(nameof(Address), m_Address); set => SetValue(nameof(Address), ref m_Address, value); }

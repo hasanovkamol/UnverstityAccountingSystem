@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace UnverstityAccountingSystem.AllControls
 {
-    public partial class Student : System.Windows.Forms.UserControl
+    public partial class StudentView : System.Windows.Forms.UserControl
     {
-        public Student()
+        public StudentView()
         {
             InitializeComponent(); 
             Refresh();

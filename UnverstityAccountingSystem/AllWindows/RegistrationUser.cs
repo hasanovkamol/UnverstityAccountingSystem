@@ -37,17 +37,6 @@ namespace UnverstityAccountingSystem.AllWindows
         {
             РегистрацияОрганизации regOrg = new РегистрацияОрганизации();
             regOrg.Show();
-
-            //BankAccount bankAccount = new BankAccount();
-            //bankAccount.Show();
-
-            //Valuta valuta = new Valuta();
-            //valuta.Show();
-
-            //Bank bank = new Bank();
-            //bank.Show();
-            //РегистрацияОрганизации registr = new РегистрацияОрганизации();
-            //registr.Show();
             this.Hide();
         }
         

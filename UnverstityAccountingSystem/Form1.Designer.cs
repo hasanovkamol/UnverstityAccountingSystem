@@ -36,16 +36,16 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btStudent = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tbUserName = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Content = new System.Windows.Forms.Panel();
             this.tbOrg = new MaterialSkin.Controls.MaterialLabel();
+            this.tbUserName = new System.Windows.Forms.Label();
+            this.Content = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,7 +85,7 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton3.Primary = true;
             this.materialRaisedButton3.Size = new System.Drawing.Size(190, 52);
             this.materialRaisedButton3.TabIndex = 11;
-            this.materialRaisedButton3.Text = "БАНКОВСКИЙСЧЕТ";
+            this.materialRaisedButton3.Text = "Отчеты ";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
             // 
             // materialRaisedButton5
@@ -99,6 +99,7 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton5.TabIndex = 10;
             this.materialRaisedButton5.Text = "ДОЛЖНОСТИ";
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
             // materialRaisedButton4
             // 
@@ -111,6 +112,7 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton4.TabIndex = 9;
             this.materialRaisedButton4.Text = "СОТРУДНИКИ";
             this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
             // 
             // btStudent
             // 
@@ -138,16 +140,6 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
             this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UnverstityAccountingSystem.Properties.Resources.sustainability;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 103);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.tbOrg);
@@ -158,6 +150,19 @@ namespace UnverstityAccountingSystem
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(881, 69);
             this.panel2.TabIndex = 1;
+            // 
+            // tbOrg
+            // 
+            this.tbOrg.AutoSize = true;
+            this.tbOrg.Depth = 0;
+            this.tbOrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.tbOrg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tbOrg.Location = new System.Drawing.Point(6, 24);
+            this.tbOrg.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbOrg.Name = "tbOrg";
+            this.tbOrg.Size = new System.Drawing.Size(166, 18);
+            this.tbOrg.TabIndex = 6;
+            this.tbOrg.Text = "Название организации";
             // 
             // tbUserName
             // 
@@ -170,6 +175,14 @@ namespace UnverstityAccountingSystem
             this.tbUserName.Text = "Hasanov Kamol";
             this.tbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Content
+            // 
+            this.Content.Location = new System.Drawing.Point(230, 67);
+            this.Content.Name = "Content";
+            this.Content.Size = new System.Drawing.Size(884, 494);
+            this.Content.TabIndex = 2;
+            this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::UnverstityAccountingSystem.Properties.Resources.unnamed;
@@ -180,26 +193,15 @@ namespace UnverstityAccountingSystem
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // Content
+            // pictureBox1
             // 
-            this.Content.Location = new System.Drawing.Point(230, 67);
-            this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(884, 494);
-            this.Content.TabIndex = 2;
-            this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
-            // 
-            // tbOrg
-            // 
-            this.tbOrg.AutoSize = true;
-            this.tbOrg.Depth = 0;
-            this.tbOrg.Font = new System.Drawing.Font("Roboto", 11F);
-            this.tbOrg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbOrg.Location = new System.Drawing.Point(6, 24);
-            this.tbOrg.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tbOrg.Name = "tbOrg";
-            this.tbOrg.Size = new System.Drawing.Size(175, 19);
-            this.tbOrg.TabIndex = 6;
-            this.tbOrg.Text = "Название организации";
+            this.pictureBox1.Image = global::UnverstityAccountingSystem.Properties.Resources.sustainability;
+            this.pictureBox1.Location = new System.Drawing.Point(43, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(146, 103);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -218,10 +220,10 @@ namespace UnverstityAccountingSystem
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

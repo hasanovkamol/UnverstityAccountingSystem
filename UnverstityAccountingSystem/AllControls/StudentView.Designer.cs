@@ -29,7 +29,6 @@ namespace UnverstityAccountingSystem.AllControls
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgStudent = new System.Windows.Forms.DataGridView();
             this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -43,15 +42,7 @@ namespace UnverstityAccountingSystem.AllControls
             // 
             this.dgStudent.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgStudent.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgStudent.Location = new System.Drawing.Point(58, 117);
+            this.dgStudent.Location = new System.Drawing.Point(66, 108);
             this.dgStudent.Name = "dgStudent";
             this.dgStudent.ReadOnly = true;
             this.dgStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -61,7 +52,7 @@ namespace UnverstityAccountingSystem.AllControls
             // btnDelete
             // 
             this.btnDelete.Depth = 0;
-            this.btnDelete.Location = new System.Drawing.Point(423, 43);
+            this.btnDelete.Location = new System.Drawing.Point(616, 35);
             this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Primary = true;
@@ -74,7 +65,7 @@ namespace UnverstityAccountingSystem.AllControls
             // btnUpdate
             // 
             this.btnUpdate.Depth = 0;
-            this.btnUpdate.Location = new System.Drawing.Point(240, 43);
+            this.btnUpdate.Location = new System.Drawing.Point(433, 35);
             this.btnUpdate.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Primary = true;
@@ -89,7 +80,7 @@ namespace UnverstityAccountingSystem.AllControls
             this.AddStudent.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddStudent.Depth = 0;
             this.AddStudent.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.AddStudent.Location = new System.Drawing.Point(57, 43);
+            this.AddStudent.Location = new System.Drawing.Point(250, 35);
             this.AddStudent.MouseState = MaterialSkin.MouseState.HOVER;
             this.AddStudent.Name = "AddStudent";
             this.AddStudent.Primary = true;
@@ -112,14 +103,14 @@ namespace UnverstityAccountingSystem.AllControls
             this.StudentContent.TabIndex = 5;
             this.StudentContent.Paint += new System.Windows.Forms.PaintEventHandler(this.StudentContent_Paint);
             // 
-            // Student
+            // StudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.StudentContent);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Student";
+            this.Name = "StudentView";
             this.Size = new System.Drawing.Size(840, 461);
             this.Load += new System.EventHandler(this.Student_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgStudent)).EndInit();

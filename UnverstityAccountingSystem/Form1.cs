@@ -53,5 +53,17 @@ namespace UnverstityAccountingSystem
         {
 
         }
+
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
+        {
+            PositionView positionView = new PositionView();
+            GloblMain.showControl(positionView, Content);
+        }
+
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
+        {
+            EmployeeViewC viewC = new EmployeeViewC();
+            GloblMain.showControl(viewC, Content);
+        }
     }
 }

@@ -6,20 +6,7 @@ namespace UnverstityAccountingSystem
 {
     public class DataModel : INotifyPropertyChanged
     {
-        private bool m_HasChanges;
-        [NotMapped]
-        public bool HasChanges
-        {
-            get { return m_HasChanges; }
-            set
-            {
-                if (m_HasChanges != value)
-                {
-                    m_HasChanges = value;
-                    OnPropertyChanged(nameof(HasChanges));
-                }
-            }
-        }
+       
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string property)
         {
@@ -37,15 +24,12 @@ namespace UnverstityAccountingSystem
             {
                 propertyRef = value;
                 OnPropertyChanged(propertyName);
-
-                HasChanges = true;
             }
             return propertyRef;
         }
         public virtual void ApplyChanges()
         {
             GloblMain.dbo.SaveChanges();
-            HasChanges = false;
         }
     }
 }

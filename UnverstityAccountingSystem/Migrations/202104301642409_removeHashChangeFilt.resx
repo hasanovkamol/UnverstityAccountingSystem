@@ -117,50 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAN1dW27kuBX9D5A9CPpKgh6X3fMzMewZuP1oGNN+wOWeyZ9BS3RZaD0qkqpjJ8hWspF8ZAvZSbYQUhIpvkXqZU1jgEaZIg/Jy8vLS/LyzP/+/Z+jn16S2PsK8yLK0mP/YG/f92AaZGGUbo79Xfn03Q/+Tz/+/ndH52Hy4v1C8n2P86GSaXHsP5fl9nC1KoJnmIBiL4mCPCuyp3IvyJIVCLPV+/39P68ODlYQQfgIy/OO7nZpGSWw+gP9eZqlAdyWOxBfZSGMiyYdfVlXqN41SGCxBQE89j+nuLVlVL6eBEGGcdLN+rUoYeJ7J3EEUIvWMH7yPZCmWQlK1N7DzwVcl3mGMm5RAojvX7cQ5XsCcQGbfhy22W27tP8ed2nVFiRQwa4os8QR8OD7RkYrsXgvSftUhkiK5ymWF+51Jclj/wNIvzTi8z2xvsPTOMd5TbLeOwMl2GNg3nn6zO+o4iD9wv+98053cbnL4XEKd2UO4nfe7e4xjoKf4et99gWmx+kujtkuoE6gb1wCSrrNsy3My9c7+CR37DL0vRUPsRIxKIK6eC2Fy7T8/r3vXaMmgccYUr1hJLYusxx+hCnMQQnDW1CWMEfDfhnCSvJSQ4RqfwHxrgSkPqSqSHS+dwVePsF0Uz4f++in711ELzAkKU0bPqcRmqyoUJnvYFc1Tc+ud8kjzCevDf87eSVIDWH2hOwH0qKgJNXh1PsIVy8NmhmuAbqHeRKl1dBiqMGwjeA/gBggQ0fhYBAlIPa92xz9agzwD763DgBGVqmcUM01+BptqmYKFX6EJVZl37uDcfW9eI62tWFkJ+0DzXeRZ8ldFvNTgHx+WGe7vGp3ps9zD/INLPkmHq1ay9Npj4YaogVZoL6mZ06bM8v0PAnDHBbF5PVcXdxMXsc9jOETXo1Hrcd6ipxFyErU7kD/eUJBFjJZ+kyUb26SXIAAiRdaeBy25v+pQVTaf1LdA/lBlaJg1wFDNmrryXpgykvWjl5Kf0E70l/nCcZCVJ4dbVfVt9eUpU8BreqqlHIaJRadGhuF76XE58k2zl4hHKLEBGMhSkya00eJ2bK/bSUWKlnv8nSOeq6iMIziWar6EOXlcwheB++A0NCFzJ4TT2GS5Ih0eX09ebcvr2/Xk1dyx+4sMzQv3aV6C14TmJYDUeo9dD0tObi+g32bFRGetc4OjYDza5Z/2cYgmHP9IW1XrjrEdD20udq1RvoorTByjkHrStuI/usKwVjIusJqjuu6Yq91v7F15QwGOdzWI/02e8///ivfgDT6OxiqbhzQQnTuhmlSH70Ty39TujfHajvXIdE0BziKgckSmH/MinK+mkY5pb6Dm6hAU6v/sbd2VeXumxQLK2cXHrjc7QKrzSQttPqcgxbcdbkL4bAbswZiIaavaU0fq8cU/aYM3lybuFOksgUc5h+Tg4r19JbmPNwF1SCCmB6LzFBts8E52eQQsluTDxma5yB1ltg6eM5ikGPL4wZlbSM+F3hP299A4PILsQ64KX1MAyk3l13A9c1iG3BFaIGJuWOMOsFRDz9lm2h6R+QWFMXfsjx8q20DCWvoPxtqhIXMh7oxfWZEW3LeiJKfs7HH/s22wMXse+BdwqgyOay8LC5isGljx3qp9hrnDZoD0CmUG0Ei5PgVAbEKx4v4CuIwIHKmjFdArDTo9740GlzWX3F/aeYDWZy14AzCrE3mmKLEiMsQ5EmYRNaibJoJsGOjlqcMv0OGgeZ+byP9k6LIgqiSqbwdoyFAfKXnaehZxAO1yyC3Z7tCso22SJpoKI79P0ldMqPT22UeXYTd39uTlI/pqlkCpvtDXVutLhPbNrd313y7D3xxqblJz2AMS+idBHW46CkoAhDKVhENb9indQqJMuEkXaOFVkCY42UHxKcIDc2WKC3l5TJKg2gLYnthCRCOt+VYHLRS8csZ3GLjmpb2whneGlqpMGhd8nNQW/kCQqcOhtuIVgnam2n7Gau/xGCA26uJCXW/l15qm28z/vrrCSdt1I7N8DbMoIP6szqdylgc3LWqI9w12Ctm96Gf3XLlsK7UriMOGkbipGv02SNOgS/leeOqS54N2kg2zk3R+KRip3DBNSzl9brwvdZhVXVGko8MpcPoLMwG2UgIzIrSAUPMqAqlXTU7QMgkUoG0dq0DhEwmFUhrwzpAkN/C6Z4KTNDqDsTmcFUFRM+gOyDwWYWqfH0+1VG43j2qipMtvQDAzA+l1raB5kxOQzy6aNfs3FHaDXHGSHbSzgEV8CQgzi6gbBYyMcatybKxdlOdHVWmb8x0NAjKxr9kQNl+DZaaIu5CllWHb2TpHTFdYCyMQS56f4iBYuzMYGEY7spkoVgu1o7LNdMzhfEzCKt7jbacwwa5kRMduizTb0er+jlhk3C00rw7PLoC2y3a8jPvEJsUb10/Qjz9bu3+Ki+pMVZBoXicR1tLa0L7fLCBwld8cRTCiyiv7nzBI8AnJ6dhImUTnRCNwSe1KfwMeRTJWkAK4d/NaqM/oTHoXCvXC9RVfL9T9RqqdUAu7eH3oSAGufkV32kW75LU4n2gCZMsfCyYejE0oQgv8Fgw4ZM9Zn0Ay0LVKfYI4iM6Fkv8Zo+qe0vHouvyOEuUPq1TiJR+k1GPVoICShsqSeulXSk/k6zn2agTrOfMcptSqrnkNomGqyqNFeLGmSTa41QPxliMKsG+PI0lYjFo4mIUzegu9tK2dpfnrnKGsjo5izo3t76xJ34sjukk8M1Gu3XkRxpsuhl3H2t90XFFPXzo32iw2t3FSINFDz3cB0tfVCde9hEPK2T9w6BxBkuHQMO2WBCa6LAuMG9ruOWBSbdHa5/PcOsmTbVHIvfPLA5Js0eponk5c4oTXMrjdzE8AE6xR7iTXMA7R4ePvnlhQWiiq9PLvnqR3V72q0MLmRN6rpGGk3s9GvMIhgVjkhdj0tpTjpFMmu4kx8Kk6YvOM2wj7MqYZx+cajLpixl6+RhoJBXgD87d9aCjvE744qMOdgDMD0amVYqhFnys/ZPr/kcrkfatBCeWNrkHlnzOIHxyWK+kNxHc2iV9XcyEpFdII81Dcu/kPgO1JbW+XPu0gPPmdI8VjDqxGM+SBPzzx191mvt+dF2qN0lrpxmji+rnPHpNHmePjQniV7huzFeHsWHD+bnxYT8sZk7Wd7IjTcjqItd9NqqL6QRMQvlZ2aqfBXShyBOxTXVDqqNHRaQ61R6picBnYZokF8Um8fW8QpPUxSgeuc8fSfWaew935dMVNF+6iAqoi8PvRqri4WWoKnle177Q+fbFWzr3/J2q9m6wjeZwvQFsSzpc9OH7Y/0Nnxi1IQvN+kKDIOkuNqoYRILTr5HaQL+RLzKNTT3N0rDa0nqXBX6DQkPw7YUh3r87q5MhisF9X8iXd9oCKsatM0hh1NF7GDKSLo13U70hG+Dhymctn249lMJBxCzUqDYp9G8aDtKEYnRzU0uxGXUWzPCafY1CHJfBPQb/a3waR5XPSzJcIcE+waKs36D47/cP3gu01suhmF4VRcg9pDPzTPPj9mZszhE1EabXdY7vOXkC5/QryINnkP8hAS9/ZLF6kzQPQqy9kxGA1GTLIUotxydb7g2rJlsOB5MtSzcy/PrIaJcU732ZhvDl2P9HVfTQu/zLA1/6nXeTo8l/6O17/zQPihujcs8pN5y+eJJJNpoeC4Qzg7AY5uFBOAI5jQNWDwbhHnoxjKl32fog06raTuO2pG4KD+GSUMdQvAXN7JLGz513tYf4xiU4XZL4ZCCB8maYOZS4SQfBifyjvZ0Cnn+0Go/+vKODusRyiw4CYvlDn+IMuHdJoA/tB6JjD+09VDKPo601bks6WGO5ARLt6BTGSfOA9w1YMpdtnGTyyylGw3BE9JYkkssemrEs4pjueH83WiEokcdxHLRRNrk6rsbegIYTNzcjrAWaYJOrDC2Yn/pw2dN0TPeOZy3s40bJnIWDGmTmJRwEreMefIzce63gHeyGceMc7DEHxiH4m0T7RU6/QSMp8vb10VuOsW+gXvGsfFP4M6qL9rlJ7iY8aGd47RZyMi7z040wrMOJu3qQaEkY3L1sH7avXjw9mleNtgfWngsfj/mJslxld5zADDQ8QxjM3pKnjKGJUZPHTEpHNifpmOmppGuli+IWa1k4lHQ5s6hRS/Gj5P2ZRIkMz1FcDmmclMjwqs+1zkVyg/VYYTrWLIFqSU/CNNm65bKWdEb/WGtK10sZY93dUUija48QlkN3mCK9iTjOMp8Z1ZPWjVJpUR2Mc+yHjxlSi9oZM3LMqOrSUqfp0LthmbVPwma+qSowsCyJtbTLvFRJ+0lVh5YeSkvJZmRkU1WhZVrSErYZ+dpUVegZmMQqBCsh1SN8V1VmZkTS0b2Z2N5UtbQscR34NeebBF4nq5Ab8rgOWBL0JAGTDypoSi0ngM/LICfxTCksnmaN0sQsd8QlWnR2Vmo4JQGcUQiSlRIoPYYLYHSWN9FY8A+DTZ0VLRnPkjC8q5NzuPVQWZMTpY2mtheFAy2bHG+L3Awc/Z3UxyPI9SmiTQuBY4rTWg1bUJLnMn3KiOsjtIhkEWMYYAlC5H2c5GX0BIISfQ5gUVT/t4GGd/08eYThZXqzK7e7EnUZJo8xx+eA/SVT/RX3HN/mo5vq/KgYowuomRG+CrpJP+yiOKTtvlCcMmsgsCPWHNxVZ+r4AG/zSpGus9QSqBEf9R/vIZpHCKy4SdfgK+zTNrQ+fYIbELySsGk9SPdA8GI/OovAJgdJ0WC05dGfSIfD5OXH/wMpTlYEOIkAAA==</value>
   </data>
-  <data name="scale_1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scale_1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="student" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\student.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hqdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hqdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-computer-icons-communication-message-music-icon-5b086ce6aa7545.9171319415272788226982" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-computer-icons-communication-message-music-icon-5b086ce6aa7545.9171319415272788226982.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sustainability1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sustainability1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user-2517432_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-2517432_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="power" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sustainability" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sustainability.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kissclipart-search-button-png-icon-clipart-search-box-computer-691bc5a2b12460cc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kissclipart-search-button-png-icon-clipart-search-box-computer-691bc5a2b12460cc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="119041-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\119041-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-man-icon-isolated-on-abstract-background-png-image_5076622" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-man-icon-isolated-on-abstract-background-png-image_5076622.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\employee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

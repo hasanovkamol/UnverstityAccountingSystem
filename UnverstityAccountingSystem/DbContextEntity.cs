@@ -23,5 +23,7 @@ namespace UnverstityAccountingSystem
         public DbSet<Facultet> Facultets { get; set; }
         public DbSet<Direction> Directions { get; set; }
         public DbSet<Оrganization> GetОrganizations { get; set; }
+        public DbSet<Position>  Positions { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }

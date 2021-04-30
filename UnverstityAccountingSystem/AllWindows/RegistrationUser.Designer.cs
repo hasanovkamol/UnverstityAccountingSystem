@@ -30,6 +30,7 @@ namespace UnverstityAccountingSystem.AllWindows
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbError = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.tbPassowrd = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@ namespace UnverstityAccountingSystem.AllWindows
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbError = new MaterialSkin.Controls.MaterialLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,18 @@ namespace UnverstityAccountingSystem.AllWindows
             this.panel1.Size = new System.Drawing.Size(665, 433);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // tbError
+            // 
+            this.tbError.AutoSize = true;
+            this.tbError.Depth = 0;
+            this.tbError.Font = new System.Drawing.Font("Roboto", 11F);
+            this.tbError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tbError.Location = new System.Drawing.Point(201, 294);
+            this.tbError.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbError.Name = "tbError";
+            this.tbError.Size = new System.Drawing.Size(0, 19);
+            this.tbError.TabIndex = 9;
             // 
             // materialLabel2
             // 
@@ -133,22 +145,10 @@ namespace UnverstityAccountingSystem.AllWindows
             this.pictureBox1.Image = global::UnverstityAccountingSystem.Properties.Resources.unnamed;
             this.pictureBox1.Location = new System.Drawing.Point(266, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 142);
+            this.pictureBox1.Size = new System.Drawing.Size(164, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // tbError
-            // 
-            this.tbError.AutoSize = true;
-            this.tbError.Depth = 0;
-            this.tbError.Font = new System.Drawing.Font("Roboto", 11F);
-            this.tbError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbError.Location = new System.Drawing.Point(201, 294);
-            this.tbError.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tbError.Name = "tbError";
-            this.tbError.Size = new System.Drawing.Size(0, 19);
-            this.tbError.TabIndex = 9;
             // 
             // RegistrationUser
             // 

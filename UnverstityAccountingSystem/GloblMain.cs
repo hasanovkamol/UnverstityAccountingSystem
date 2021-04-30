@@ -15,7 +15,7 @@ namespace UnverstityAccountingSystem
         public static DbContextEntity dbo=new DbContextEntity();
         public static int CurrentId { get; set; }
         public static Bank bank { get; set; }
-        public static UnverstityAccountingSystem.Data.BankAccount bankaccount { get; set; }
+        public static Data.BankAccount bankaccount { get; set; }
         private static  Control usercontrol { get; set; }
         public static void showControl(Control control, Control Content)
         {
@@ -42,9 +42,12 @@ namespace UnverstityAccountingSystem
         public static User SingIn(string login,string password)
         {
             var _user = dbo.Users.Where(x => x.Login == login && x.Password == password).FirstOrDefault();
+            GetUser = _user;
             return _user;
         }
         
-       
+       public static Оrganization Orientation { get=> dbo.GetОrganizations.Include("BankAccount").FirstOrDefault(); }
+
+       public static User GetUser { get; set; }
     }
 }

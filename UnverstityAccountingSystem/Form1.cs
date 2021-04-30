@@ -19,8 +19,17 @@ namespace UnverstityAccountingSystem
         public Form1()
         {
             InitializeComponent();
-           
-            //tbOrg.Text += ": " + GloblMain.dbo.Students.Find(0).Name;
+            //if (GloblMain.GetUser == null)
+            //{
+            //    MessageBox.Show("Пожалуйста, зарегистрируйте этого пользователя в системе ");
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    InitializeComponent();
+            //    materialRaisedButton2_Click(null, null);
+            //    tbUserName.Text = GloblMain.GetUser.UserName;
+            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,7 +47,7 @@ namespace UnverstityAccountingSystem
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
-            OrganizatsionInfo organizatsion = new OrganizatsionInfo();
+            OrganizatsionInfo organizatsion = new OrganizatsionInfo(GloblMain.Orientation);
             GloblMain.showControl(organizatsion, Content);
         }
 
@@ -65,5 +74,12 @@ namespace UnverstityAccountingSystem
             EmployeeViewC viewC = new EmployeeViewC();
             GloblMain.showControl(viewC, Content);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
     }
 }

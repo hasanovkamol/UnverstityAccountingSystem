@@ -36,21 +36,20 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btStudent = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tbOrg = new MaterialSkin.Controls.MaterialLabel();
-            this.tbUserName = new System.Windows.Forms.Label();
-            this.Content = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tbUserName = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Content = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.materialRaisedButton3);
             this.panel1.Controls.Add(this.materialRaisedButton5);
@@ -63,6 +62,7 @@ namespace UnverstityAccountingSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 509);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // linkLabel1
             // 
@@ -140,59 +140,6 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
             this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tbOrg);
-            this.panel2.Controls.Add(this.tbUserName);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(230, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(881, 69);
-            this.panel2.TabIndex = 1;
-            // 
-            // tbOrg
-            // 
-            this.tbOrg.AutoSize = true;
-            this.tbOrg.Depth = 0;
-            this.tbOrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.tbOrg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbOrg.Location = new System.Drawing.Point(6, 24);
-            this.tbOrg.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tbOrg.Name = "tbOrg";
-            this.tbOrg.Size = new System.Drawing.Size(166, 18);
-            this.tbOrg.TabIndex = 6;
-            this.tbOrg.Text = "Название организации";
-            // 
-            // tbUserName
-            // 
-            this.tbUserName.AutoSize = true;
-            this.tbUserName.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUserName.Location = new System.Drawing.Point(715, 24);
-            this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(99, 16);
-            this.tbUserName.TabIndex = 5;
-            this.tbUserName.Text = "Hasanov Kamol";
-            this.tbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Content
-            // 
-            this.Content.Location = new System.Drawing.Point(230, 67);
-            this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(884, 494);
-            this.Content.TabIndex = 2;
-            this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UnverstityAccountingSystem.Properties.Resources.unnamed;
-            this.pictureBox2.Location = new System.Drawing.Point(820, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UnverstityAccountingSystem.Properties.Resources.sustainability;
@@ -202,6 +149,46 @@ namespace UnverstityAccountingSystem
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tbUserName);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(230, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(881, 69);
+            this.panel2.TabIndex = 1;
+            // 
+            // tbUserName
+            // 
+            this.tbUserName.AutoSize = true;
+            this.tbUserName.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUserName.Location = new System.Drawing.Point(715, 44);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(99, 16);
+            this.tbUserName.TabIndex = 5;
+            this.tbUserName.Text = "Hasanov Kamol";
+            this.tbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UnverstityAccountingSystem.Properties.Resources.unnamed;
+            this.pictureBox2.Location = new System.Drawing.Point(828, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Content
+            // 
+            this.Content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Content.Location = new System.Drawing.Point(230, 69);
+            this.Content.Name = "Content";
+            this.Content.Size = new System.Drawing.Size(881, 440);
+            this.Content.TabIndex = 2;
+            this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
             // Form1
             // 
@@ -220,10 +207,10 @@ namespace UnverstityAccountingSystem
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -242,7 +229,6 @@ namespace UnverstityAccountingSystem
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label tbUserName;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MaterialSkin.Controls.MaterialLabel tbOrg;
     }
 }
 

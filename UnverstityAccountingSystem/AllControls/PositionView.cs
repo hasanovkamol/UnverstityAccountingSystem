@@ -13,11 +13,12 @@ namespace UnverstityAccountingSystem.AllControls
 {
     public partial class PositionView : UserControl
     {
-        private bool AccountOrPosition = false;
+        private bool AccountOrPosition = true;
         public PositionView()
         {
             InitializeComponent();
             Refresh();
+            lbUser.ForeColor = Color.Green;
         }
 
         private void AddStudent_Click(object sender, EventArgs e)
@@ -104,11 +105,15 @@ namespace UnverstityAccountingSystem.AllControls
 
         private void dgUserAccount_Click(object sender, EventArgs e)
         {
+            lbUser.ForeColor = Color.Green;
+            lbPosition.ForeColor = Color.Black;
             AccountOrPosition = true;
         }
 
         private void dgPositons_Click(object sender, EventArgs e)
         {
+            lbPosition.ForeColor = Color.Green;
+            lbUser.ForeColor = Color.Black;
             AccountOrPosition = false; 
         }
     }

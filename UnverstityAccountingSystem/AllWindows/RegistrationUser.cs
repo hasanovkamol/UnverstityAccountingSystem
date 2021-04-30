@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace UnverstityAccountingSystem.AllWindows
@@ -35,9 +36,18 @@ namespace UnverstityAccountingSystem.AllWindows
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            РегистрацияОрганизации regOrg = new РегистрацияОрганизации();
-            regOrg.Show();
-            this.Hide();
+            if (FindOrganization()) tbError.Text = "Организация зарегистрирована";
+            else
+            {
+                РегистрацияОрганизации regOrg = new РегистрацияОрганизации();
+                regOrg.Show();
+                this.Hide();
+            }
+
+        }
+        private bool FindOrganization()
+        {
+           return GloblMain.dbo.GetОrganizations.ToList().Count>0? true :false;
         }
         
     }

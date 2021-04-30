@@ -29,106 +29,184 @@ namespace UnverstityAccountingSystem.AllControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnAdd = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbINN = new System.Windows.Forms.Label();
+            this.lbTelefon = new System.Windows.Forms.Label();
+            this.lbRegistrationDate = new System.Windows.Forms.Label();
+            this.lbOBankSchot = new System.Windows.Forms.Label();
+            this.lbAddress = new System.Windows.Forms.Label();
+            this.lbBalans = new System.Windows.Forms.Label();
+            this.lbDateofContract = new System.Windows.Forms.Label();
+            this.lbContracTerminationDate = new System.Windows.Forms.Label();
+            this.lbAccountNumber = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Depth = 0;
-            this.btnDelete.Location = new System.Drawing.Point(672, 32);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(6);
-            this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Primary = true;
-            this.btnDelete.Size = new System.Drawing.Size(124, 42);
-            this.btnDelete.TabIndex = 36;
-            this.btnDelete.Text = "Удалить";
-            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
             this.btnUpdate.Depth = 0;
-            this.btnUpdate.Location = new System.Drawing.Point(524, 32);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
+            this.btnUpdate.Location = new System.Drawing.Point(424, 24);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Primary = true;
-            this.btnUpdate.Size = new System.Drawing.Size(124, 42);
+            this.btnUpdate.Size = new System.Drawing.Size(378, 42);
             this.btnUpdate.TabIndex = 35;
-            this.btnUpdate.Text = "Изменить";
+            this.btnUpdate.Text = "Измените характеристики организации ";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnAdd
+            // lbName
             // 
-            this.btnAdd.Depth = 0;
-            this.btnAdd.Location = new System.Drawing.Point(376, 32);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Primary = true;
-            this.btnAdd.Size = new System.Drawing.Size(124, 42);
-            this.btnAdd.TabIndex = 34;
-            this.btnAdd.Text = "Добавлять";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.lbName.AutoSize = true;
+            this.lbName.Location = new System.Drawing.Point(47, 131);
+            this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(164, 16);
+            this.lbName.TabIndex = 37;
+            this.lbName.Text = "Название организации";
+            // 
+            // lbINN
+            // 
+            this.lbINN.AutoSize = true;
+            this.lbINN.Location = new System.Drawing.Point(47, 173);
+            this.lbINN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbINN.Name = "lbINN";
+            this.lbINN.Size = new System.Drawing.Size(38, 16);
+            this.lbINN.TabIndex = 38;
+            this.lbINN.Text = "ИНН";
+            // 
+            // lbTelefon
+            // 
+            this.lbTelefon.AutoSize = true;
+            this.lbTelefon.Location = new System.Drawing.Point(47, 215);
+            this.lbTelefon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTelefon.Name = "lbTelefon";
+            this.lbTelefon.Size = new System.Drawing.Size(60, 16);
+            this.lbTelefon.TabIndex = 39;
+            this.lbTelefon.Text = "Телфон";
+            // 
+            // lbRegistrationDate
+            // 
+            this.lbRegistrationDate.AutoSize = true;
+            this.lbRegistrationDate.Location = new System.Drawing.Point(47, 299);
+            this.lbRegistrationDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbRegistrationDate.Name = "lbRegistrationDate";
+            this.lbRegistrationDate.Size = new System.Drawing.Size(156, 16);
+            this.lbRegistrationDate.TabIndex = 42;
+            this.lbRegistrationDate.Text = "Дата гос. регистрации";
+            // 
+            // lbOBankSchot
+            // 
+            this.lbOBankSchot.AutoSize = true;
+            this.lbOBankSchot.Location = new System.Drawing.Point(506, 131);
+            this.lbOBankSchot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbOBankSchot.Name = "lbOBankSchot";
+            this.lbOBankSchot.Size = new System.Drawing.Size(154, 16);
+            this.lbOBankSchot.TabIndex = 41;
+            this.lbOBankSchot.Text = "Осн. банковский счет:";
+            // 
+            // lbAddress
+            // 
+            this.lbAddress.AutoSize = true;
+            this.lbAddress.Location = new System.Drawing.Point(47, 257);
+            this.lbAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAddress.Name = "lbAddress";
+            this.lbAddress.Size = new System.Drawing.Size(48, 16);
+            this.lbAddress.TabIndex = 40;
+            this.lbAddress.Text = "Адрес";
+            // 
+            // lbBalans
+            // 
+            this.lbBalans.AutoSize = true;
+            this.lbBalans.Location = new System.Drawing.Point(506, 257);
+            this.lbBalans.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbBalans.Name = "lbBalans";
+            this.lbBalans.Size = new System.Drawing.Size(56, 16);
+            this.lbBalans.TabIndex = 45;
+            this.lbBalans.Text = "Баланс";
+            // 
+            // lbDateofContract
+            // 
+            this.lbDateofContract.AutoSize = true;
+            this.lbDateofContract.Location = new System.Drawing.Point(506, 215);
+            this.lbDateofContract.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbDateofContract.Name = "lbDateofContract";
+            this.lbDateofContract.Size = new System.Drawing.Size(200, 16);
+            this.lbDateofContract.TabIndex = 44;
+            this.lbDateofContract.Text = "Дата заключения контракта ";
+            // 
+            // lbContracTerminationDate
+            // 
+            this.lbContracTerminationDate.AutoSize = true;
+            this.lbContracTerminationDate.Location = new System.Drawing.Point(506, 173);
+            this.lbContracTerminationDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbContracTerminationDate.Name = "lbContracTerminationDate";
+            this.lbContracTerminationDate.Size = new System.Drawing.Size(207, 16);
+            this.lbContracTerminationDate.TabIndex = 43;
+            this.lbContracTerminationDate.Text = "Дата прекращения контракта ";
+            // 
+            // lbAccountNumber
+            // 
+            this.lbAccountNumber.AutoSize = true;
+            this.lbAccountNumber.Location = new System.Drawing.Point(506, 299);
+            this.lbAccountNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAccountNumber.Name = "lbAccountNumber";
+            this.lbAccountNumber.Size = new System.Drawing.Size(95, 16);
+            this.lbAccountNumber.TabIndex = 46;
+            this.lbAccountNumber.Text = "Номер счета ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 128);
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(46, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 26);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 26);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(104, 255);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 26);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "label3";
+            this.label1.Size = new System.Drawing.Size(261, 23);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "Информация об организации ";
             // 
             // OrganizatsionInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.lbAccountNumber);
+            this.Controls.Add(this.lbBalans);
+            this.Controls.Add(this.lbDateofContract);
+            this.Controls.Add(this.lbContracTerminationDate);
+            this.Controls.Add(this.lbRegistrationDate);
+            this.Controls.Add(this.lbOBankSchot);
+            this.Controls.Add(this.lbAddress);
+            this.Controls.Add(this.lbTelefon);
+            this.Controls.Add(this.lbINN);
+            this.Controls.Add(this.lbName);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnAdd);
-            this.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OrganizatsionInfo";
-            this.Size = new System.Drawing.Size(840, 420);
+            this.Size = new System.Drawing.Size(897, 420);
+            this.Load += new System.EventHandler(this.OrganizatsionInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialRaisedButton btnDelete;
         private MaterialSkin.Controls.MaterialRaisedButton btnUpdate;
-        private MaterialSkin.Controls.MaterialRaisedButton btnAdd;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label lbINN;
+        private System.Windows.Forms.Label lbTelefon;
+        private System.Windows.Forms.Label lbRegistrationDate;
+        private System.Windows.Forms.Label lbOBankSchot;
+        private System.Windows.Forms.Label lbAddress;
+        private System.Windows.Forms.Label lbBalans;
+        private System.Windows.Forms.Label lbDateofContract;
+        private System.Windows.Forms.Label lbContracTerminationDate;
+        private System.Windows.Forms.Label lbAccountNumber;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }

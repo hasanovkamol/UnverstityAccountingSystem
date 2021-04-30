@@ -34,9 +34,10 @@ namespace UnverstityAccountingSystem.AllControls
             this.btnDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpdate = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dgPositons = new System.Windows.Forms.DataGridView();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lbUser = new MaterialSkin.Controls.MaterialLabel();
+            this.lbPosition = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgUserAccount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPositons)).BeginInit();
             this.SuspendLayout();
@@ -111,33 +112,33 @@ namespace UnverstityAccountingSystem.AllControls
             this.dgPositons.TabIndex = 9;
             this.dgPositons.Click += new System.EventHandler(this.dgPositons_Click);
             // 
-            // materialLabel1
+            // lbUser
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(45, 107);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(176, 19);
-            this.materialLabel1.TabIndex = 10;
-            this.materialLabel1.Text = "Список пользователей";
+            this.lbUser.AutoSize = true;
+            this.lbUser.Depth = 0;
+            this.lbUser.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbUser.Location = new System.Drawing.Point(45, 107);
+            this.lbUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbUser.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(176, 19);
+            this.lbUser.TabIndex = 10;
+            this.lbUser.Text = "Список пользователей";
             // 
-            // materialLabel2
+            // lbPosition
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(461, 107);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(244, 19);
-            this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Типы сотрудников организации ";
+            this.lbPosition.AutoSize = true;
+            this.lbPosition.Depth = 0;
+            this.lbPosition.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbPosition.Location = new System.Drawing.Point(461, 107);
+            this.lbPosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPosition.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbPosition.Name = "lbPosition";
+            this.lbPosition.Size = new System.Drawing.Size(244, 19);
+            this.lbPosition.TabIndex = 11;
+            this.lbPosition.Text = "Типы сотрудников организации ";
             // 
             // materialLabel3
             // 
@@ -149,17 +150,29 @@ namespace UnverstityAccountingSystem.AllControls
             this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(240, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(0, 19);
             this.materialLabel3.TabIndex = 12;
-            this.materialLabel3.Text = "Организационный менеджмент ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(40, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(280, 23);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Организационный менеджмент ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // PositionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.lbPosition);
+            this.Controls.Add(this.lbUser);
             this.Controls.Add(this.dgPositons);
             this.Controls.Add(this.dgUserAccount);
             this.Controls.Add(this.AddStudent);
@@ -184,8 +197,9 @@ namespace UnverstityAccountingSystem.AllControls
         private MaterialSkin.Controls.MaterialRaisedButton btnDelete;
         private MaterialSkin.Controls.MaterialRaisedButton btnUpdate;
         private System.Windows.Forms.DataGridView dgPositons;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel lbUser;
+        private MaterialSkin.Controls.MaterialLabel lbPosition;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -14,9 +14,26 @@ namespace UnverstityAccountingSystem.AllWindows
     public partial class РегистрацияОрганизации : Form
     {
         private Оrganization GetОrganization = new Оrganization();
-        public РегистрацияОрганизации()
+        public РегистрацияОрганизации(Оrganization оrganization=null)
         {
             InitializeComponent();
+            if (оrganization!= null)
+            {
+                this.GetОrganization = оrganization;
+                BindView();
+                btnSave.Text = "Обновлять";
+            }
+        }
+        private void BindView()
+        {
+             tbName.Text= GetОrganization.Name;
+             tbINN.Text= GetОrganization.INN;
+             tbAddress.Text= GetОrganization.Address;
+             tbTelefon.Text= GetОrganization.Telefon;
+             tbGostNumber.Text= GetОrganization.NomerGost;
+             dtGostDate.Value= GetОrganization.NomerGostDate;
+             dtRegistration.Value= GetОrganization.RegistrationDate;
+             tbBankAccount.Text = GetОrganization.BankAccount.Name;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,8 +71,13 @@ namespace UnverstityAccountingSystem.AllWindows
             if (GetОrganization.NotNullModel())
             {
                 GetОrganization.ApplyChanges();
-                UserRollAcount userRoll = new UserRollAcount();
-                userRoll.Show();
+
+                if(btnSave.Text=="Обновлять") this.Hide();
+                else
+                {
+                    UserRollAcount userRoll = new UserRollAcount();
+                    userRoll.Show();
+                }
                 this.Hide();
             }
             else tbError.Text = "Информация неполная ";

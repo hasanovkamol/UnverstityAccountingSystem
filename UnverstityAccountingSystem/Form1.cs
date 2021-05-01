@@ -18,18 +18,18 @@ namespace UnverstityAccountingSystem
     {
         public Form1()
         {
-            InitializeComponent();
-            //if (GloblMain.GetUser == null)
-            //{
-            //    MessageBox.Show("Пожалуйста, зарегистрируйте этого пользователя в системе ");
-            //    this.Close();
-            //}
-            //else
-            //{
-            //    InitializeComponent();
-            //    materialRaisedButton2_Click(null, null);
-            //    tbUserName.Text = GloblMain.GetUser.UserName;
-            //}
+
+            if (GloblMain.GetUser == null)
+            {
+                MessageBox.Show("Пожалуйста, зарегистрируйте этого пользователя в системе ");
+                this.Close();
+            }
+            else
+            {
+                InitializeComponent();
+                materialRaisedButton2_Click(null, null);
+                tbUserName.Text = GloblMain.GetUser.UserName;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -80,6 +80,10 @@ namespace UnverstityAccountingSystem
 
         }
 
-       
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            GloblMain.showControl(report, Content);
+        }
     }
 }

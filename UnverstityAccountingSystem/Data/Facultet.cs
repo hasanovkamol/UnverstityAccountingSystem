@@ -12,7 +12,6 @@ namespace UnverstityAccountingSystem.Data
     {
         private int m_FacultetId;
         private string m_Name;
-        private List<string> m_educationalDirections;
         private ICollection<Direction> m_FacultetDirections;
 
         [Key]

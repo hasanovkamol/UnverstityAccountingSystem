@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI;
 using System.Windows.Forms;
+using UnverstityAccountingSystem.AllWindows;
 
 namespace UnverstityAccountingSystem.AllControls
 {
@@ -20,20 +21,22 @@ namespace UnverstityAccountingSystem.AllControls
         }
         private void Refresh()
         {
-           //dgStudent.DataSource=GloblMain.dbo.Students.ToList();
+           dgStudent.DataSource=GloblMain.dbo.StudentDMs.ToList();
         }
         private void AddStudent_Click(object sender, EventArgs e)
         {
-            StudentAdd student = new StudentAdd();
-            GloblMain.showControl(student, StudentContent);
+            AddOrUpdaetStudent student = new AddOrUpdaetStudent();
+            student.ShowDialog();
+            Refresh();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             int id = int.Parse(dgStudent.SelectedCells[0].FormattedValue.ToString());
-            var studentModel = GloblMain.dbo.Students.Find(id);
-            StudentAdd student = new StudentAdd(studentModel);
-            GloblMain.showControl(student, StudentContent);
+            var studentModel = GloblMain.dbo.StudentDMs.Find(id);
+            AddOrUpdaetStudent student = new AddOrUpdaetStudent(studentModel);
+            student.ShowDialog();
+            Refresh();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -49,6 +52,37 @@ namespace UnverstityAccountingSystem.AllControls
         private void StudentContent_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(dgStudent.SelectedCells[0].FormattedValue.ToString());
+            var studentModel = GloblMain.dbo.StudentDMs.Find(id);
+            if(studentModel!=null)
+            {
+                if (studentModel.PaymentAgreement)
+                {
+                    MessageBox.Show("Этот студент поступил на основании государственного гранта.");
+                    PaymentStudent payment = new PaymentStudent(studentModel);
+                    payment.ShowDialog();
+                    if (payment.DialogResult == DialogResult.OK)
+                    {
+                        MessageBox.Show("Платеж произведен");                      
+                    }
+                }
+                else
+                {
+                    PaymentStudent payment = new PaymentStudent(studentModel);
+                    payment.ShowDialog();
+                    if (payment.DialogResult == DialogResult.OK)
+                    {
+                        MessageBox.Show("Платеж произведен");
+                      
+                    }
+                }
+                Refresh();
+            }
+           
         }
     }
 }

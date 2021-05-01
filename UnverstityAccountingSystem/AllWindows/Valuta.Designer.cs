@@ -50,6 +50,7 @@ namespace UnverstityAccountingSystem.AllWindows
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;

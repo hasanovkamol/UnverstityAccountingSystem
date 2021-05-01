@@ -100,11 +100,11 @@
     <Compile Include="AllControls\PositionView.Designer.cs">
       <DependentUpon>PositionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllControls\StudentAdd.cs">
+    <Compile Include="AllControls\Report.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AllControls\StudentAdd.Designer.cs">
-      <DependentUpon>StudentAdd.cs</DependentUpon>
+    <Compile Include="AllControls\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="AllWindows\AddBank.cs">
       <SubType>Form</SubType>
@@ -117,6 +117,12 @@
     </Compile>
     <Compile Include="AllWindows\AddEditBankAccount.Designer.cs">
       <DependentUpon>AddEditBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\AddOrUpdaetStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\AddOrUpdaetStudent.Designer.cs">
+      <DependentUpon>AddOrUpdaetStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="AllWindows\BankAccount.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,12 @@
     <Compile Include="AllWindows\FacultetView.Designer.cs">
       <DependentUpon>FacultetView.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindows\PaymentStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\PaymentStudent.Designer.cs">
+      <DependentUpon>PaymentStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindows\PositonViewW.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     </Compile>
     <Compile Include="AllWindows\RegistrationUser.Designer.cs">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindows\SalaryEmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindows\SalaryEmployeeView.Designer.cs">
+      <DependentUpon>SalaryEmployeeView.cs</DependentUpon>
     </Compile>
     <Compile Include="AllWindows\UserRegistration.cs">
       <SubType>Form</SubType>
@@ -185,7 +203,9 @@
     <Compile Include="Data\Employee.cs" />
     <Compile Include="Data\Facultet.cs" />
     <Compile Include="Data\Position.cs" />
-    <Compile Include="Data\Student.cs" />
+    <Compile Include="Data\Salary.cs" />
+    <Compile Include="Data\SalaryEmployee.cs" />
+    <Compile Include="Data\StudentDM.cs" />
     <Compile Include="Data\User.cs" />
     <Compile Include="Data\Valuta.cs" />
     <Compile Include="Data\Оrganization.cs" />
@@ -197,41 +217,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GloblMain.cs" />
-    <Compile Include="Migrations\202104280345099_CreateDatabse.cs" />
-    <Compile Include="Migrations\202104280345099_CreateDatabse.designer.cs">
-      <DependentUpon>202104280345099_CreateDatabse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104281647490_ChangeModelStudent.cs" />
-    <Compile Include="Migrations\202104281647490_ChangeModelStudent.designer.cs">
-      <DependentUpon>202104281647490_ChangeModelStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104281858115_chang model Facultet.cs" />
-    <Compile Include="Migrations\202104281858115_chang model Facultet.designer.cs">
-      <DependentUpon>202104281858115_chang model Facultet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104281913065_new change.cs" />
-    <Compile Include="Migrations\202104281913065_new change.designer.cs">
-      <DependentUpon>202104281913065_new change.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104291722072_AddClassForModel.cs" />
-    <Compile Include="Migrations\202104291722072_AddClassForModel.designer.cs">
-      <DependentUpon>202104291722072_AddClassForModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104291906099_upateMode.cs" />
-    <Compile Include="Migrations\202104291906099_upateMode.designer.cs">
-      <DependentUpon>202104291906099_upateMode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104292025179_NeModelEmployeeAndPotio.cs" />
-    <Compile Include="Migrations\202104292025179_NeModelEmployeeAndPotio.designer.cs">
-      <DependentUpon>202104292025179_NeModelEmployeeAndPotio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104301642409_removeHashChangeFilt.cs" />
-    <Compile Include="Migrations\202104301642409_removeHashChangeFilt.designer.cs">
-      <DependentUpon>202104301642409_removeHashChangeFilt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104301806293_dads.cs" />
-    <Compile Include="Migrations\202104301806293_dads.designer.cs">
-      <DependentUpon>202104301806293_dads.cs</DependentUpon>
+    <Compile Include="Migrations\202105010814038_HisobModels.cs" />
+    <Compile Include="Migrations\202105010814038_HisobModels.designer.cs">
+      <DependentUpon>202105010814038_HisobModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -253,17 +241,20 @@
     <EmbeddedResource Include="AllControls\PositionView.resx">
       <DependentUpon>PositionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllControls\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllControls\StudentView.resx">
       <DependentUpon>StudentView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllControls\StudentAdd.resx">
-      <DependentUpon>StudentAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\AddBank.resx">
       <DependentUpon>AddBank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\AddEditBankAccount.resx">
       <DependentUpon>AddEditBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\AddOrUpdaetStudent.resx">
+      <DependentUpon>AddOrUpdaetStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\BankAccount.resx">
       <DependentUpon>BankAccount.cs</DependentUpon>
@@ -277,11 +268,17 @@
     <EmbeddedResource Include="AllWindows\FacultetView.resx">
       <DependentUpon>FacultetView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\PaymentStudent.resx">
+      <DependentUpon>PaymentStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\PositonViewW.resx">
       <DependentUpon>PositonViewW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\RegistrationUser.resx">
       <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindows\SalaryEmployeeView.resx">
+      <DependentUpon>SalaryEmployeeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindows\UserRegistration.resx">
       <DependentUpon>UserRegistration.cs</DependentUpon>
@@ -298,32 +295,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104280345099_CreateDatabse.resx">
-      <DependentUpon>202104280345099_CreateDatabse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104281647490_ChangeModelStudent.resx">
-      <DependentUpon>202104281647490_ChangeModelStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104281858115_chang model Facultet.resx">
-      <DependentUpon>202104281858115_chang model Facultet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104281913065_new change.resx">
-      <DependentUpon>202104281913065_new change.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104291722072_AddClassForModel.resx">
-      <DependentUpon>202104291722072_AddClassForModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104291906099_upateMode.resx">
-      <DependentUpon>202104291906099_upateMode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104292025179_NeModelEmployeeAndPotio.resx">
-      <DependentUpon>202104292025179_NeModelEmployeeAndPotio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104301642409_removeHashChangeFilt.resx">
-      <DependentUpon>202104301642409_removeHashChangeFilt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104301806293_dads.resx">
-      <DependentUpon>202104301806293_dads.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105010814038_HisobModels.resx">
+      <DependentUpon>202105010814038_HisobModels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

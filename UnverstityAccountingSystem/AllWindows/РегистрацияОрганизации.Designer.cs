@@ -99,6 +99,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.materialLabel3.Size = new System.Drawing.Size(194, 19);
             this.materialLabel3.TabIndex = 6;
             this.materialLabel3.Text = "Номер банковского счета";
+            this.materialLabel3.Click += new System.EventHandler(this.materialLabel3_Click);
             // 
             // tbBankAccount
             // 
@@ -106,6 +107,7 @@ namespace UnverstityAccountingSystem.AllWindows
             this.tbBankAccount.Name = "tbBankAccount";
             this.tbBankAccount.Size = new System.Drawing.Size(344, 28);
             this.tbBankAccount.TabIndex = 7;
+            this.tbBankAccount.TextChanged += new System.EventHandler(this.tbBankAccount_TextChanged);
             // 
             // button1
             // 

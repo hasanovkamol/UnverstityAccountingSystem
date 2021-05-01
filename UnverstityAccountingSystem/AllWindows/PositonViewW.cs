@@ -19,6 +19,7 @@ namespace UnverstityAccountingSystem.AllWindows
             InitializeComponent();
             if (position != null)
             {
+                btnSave.Text = "Обновлять";
                 this.position = position;
                 BindVew();
             }

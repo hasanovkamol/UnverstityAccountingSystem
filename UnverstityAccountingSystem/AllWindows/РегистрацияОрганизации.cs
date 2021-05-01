@@ -99,5 +99,15 @@ namespace UnverstityAccountingSystem.AllWindows
             RegistrationUser registration = new RegistrationUser();
             registration.Show();
         }
+
+        private void tbBankAccount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

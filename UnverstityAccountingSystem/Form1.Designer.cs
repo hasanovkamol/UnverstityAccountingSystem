@@ -87,6 +87,7 @@ namespace UnverstityAccountingSystem
             this.materialRaisedButton3.TabIndex = 11;
             this.materialRaisedButton3.Text = "Отчеты ";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
             // materialRaisedButton5
             // 

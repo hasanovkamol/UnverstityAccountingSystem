@@ -7,13 +7,13 @@ namespace UnverstityAccountingSystem.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class NeModelEmployeeAndPotio : IMigrationMetadata
+    public sealed partial class HisobModels : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(NeModelEmployeeAndPotio));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(HisobModels));
         
         string IMigrationMetadata.Id
         {
-            get { return "202104292025179_NeModelEmployeeAndPotio"; }
+            get { return "202105010814038_HisobModels"; }
         }
         
         string IMigrationMetadata.Source

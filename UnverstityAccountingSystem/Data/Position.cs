@@ -29,7 +29,12 @@ namespace UnverstityAccountingSystem.Data
         }
         public bool NotNullModel()
         {
-            if (m_Name.Length > 0 && m_Decreption.Length > 0) return true;
+            if (m_Name.Length > 0 && m_Decreption.Length > 0)
+            {
+                if (GloblMain.dbo.Positions.ToList().Where(x => x.Name == m_Name).ToList().Count > 0) return false;
+                else return true;
+            } 
+
             else return false;
         }
     }

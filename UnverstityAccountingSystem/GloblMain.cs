@@ -48,6 +48,22 @@ namespace UnverstityAccountingSystem
         
        public static Оrganization Orientation { get=> dbo.GetОrganizations.Include("BankAccount").FirstOrDefault(); }
 
-       public static User GetUser { get; set; }
+        public static bool GetSumOrg(decimal summ)
+        {
+            Оrganization Ori = new Оrganization();
+            Ori = Orientation;
+            Ori.BankAccount.AccountBalance = Ori.BankAccount.AccountBalance - summ;
+            Ori.ApplyChanges();
+            if (Ori.BankAccount.AccountBalance > 0) return true;
+            else return false;
+        }
+        public static void SetSumOrg(decimal summ)
+        {
+            Оrganization Ori = new Оrganization();
+            Ori = Orientation;
+            Ori.BankAccount.AccountBalance = Ori.BankAccount.AccountBalance + summ;
+            Ori.ApplyChanges();
+        }
+        public static User GetUser { get; set; }
     }
 }

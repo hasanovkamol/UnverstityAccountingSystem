@@ -60,7 +60,7 @@ namespace UnverstityAccountingSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 509);
+            this.panel1.Size = new System.Drawing.Size(230, 521);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -187,7 +187,7 @@ namespace UnverstityAccountingSystem
             this.Content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Content.Location = new System.Drawing.Point(230, 69);
             this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(881, 440);
+            this.Content.Size = new System.Drawing.Size(881, 452);
             this.Content.TabIndex = 2;
             this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
@@ -196,7 +196,7 @@ namespace UnverstityAccountingSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1111, 509);
+            this.ClientSize = new System.Drawing.Size(1111, 521);
             this.Controls.Add(this.Content);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

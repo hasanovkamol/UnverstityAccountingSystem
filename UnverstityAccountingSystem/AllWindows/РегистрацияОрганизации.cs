@@ -96,8 +96,13 @@ namespace UnverstityAccountingSystem.AllWindows
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegistrationUser registration = new RegistrationUser();
-            registration.Show();
+            if (btnSave.Text == "Обновлять") return;
+            else
+            {
+                RegistrationUser registration = new RegistrationUser();
+                registration.Show();
+            }
+                
         }
 
         private void tbBankAccount_TextChanged(object sender, EventArgs e)

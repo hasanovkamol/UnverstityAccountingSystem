@@ -9,6 +9,8 @@ namespace UnverstityAccountingSystem.AllWindows
         public RegistrationUser()
         {
             InitializeComponent();
+            if (GloblMain.dbo.GetОrganizations.Count() > 0) linkLabel2.Enabled = true;
+            else linkLabel2.Enabled = false;
         }
 
         private void RegistrationUser_Load(object sender, EventArgs e)
@@ -49,6 +51,24 @@ namespace UnverstityAccountingSystem.AllWindows
         {
            return GloblMain.dbo.GetОrganizations.ToList().Count>0? true :false;
         }
-        
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+          DialogResult dialog= MessageBox.Show("Вы действительно хотите удалить базу данных"
+              ,"Удалить"
+              , MessageBoxButtons.YesNo
+              ,MessageBoxIcon.Information);
+            if (dialog == DialogResult.Yes)
+            {
+                GloblMain.dbo.Database.Delete();
+
+            }
+            else
+            {
+
+            }
+
+
+        }
     }
 }

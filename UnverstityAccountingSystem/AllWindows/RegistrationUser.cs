@@ -62,6 +62,26 @@ namespace UnverstityAccountingSystem.AllWindows
             {
                 int id = GloblMain.dbo.GetОrganizations.ToList().FirstOrDefault().OrganizationId;
                 GloblMain.dbo.GetОrganizations.Remove(GloblMain.dbo.GetОrganizations.Find(id));
+                foreach (var item in GloblMain.dbo.Employees)
+                {
+                    GloblMain.dbo.Employees.Remove(item);
+                    GloblMain.dbo.SaveChanges();
+                }
+                foreach (var item in GloblMain.dbo.StudentDMs)
+                {
+                    GloblMain.dbo.StudentDMs.Remove(item);
+                    GloblMain.dbo.SaveChanges();
+                }
+                foreach (var item in GloblMain.dbo.Users)
+                {
+                    GloblMain.dbo.Users.Remove(item);
+                    GloblMain.dbo.SaveChanges();
+                }
+                foreach (var item in GloblMain.dbo.BankAccounts)
+                {
+                    GloblMain.dbo.BankAccounts.Remove(item);
+                    GloblMain.dbo.SaveChanges();
+                }
                 GloblMain.dbo.SaveChanges();
 
             }

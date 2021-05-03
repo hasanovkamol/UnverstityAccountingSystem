@@ -33,8 +33,10 @@ namespace UnverstityAccountingSystem.AllWindows
             BankView bank = new BankView();
             bank.ShowDialog();
             account.GetBank = GloblMain.bank;
-            tbGetBank.Text = account.GetBank.Name;
-            
+            if (account.GetBank.Name == null) return;
+            else tbGetBank.Text = account.GetBank.Name;
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

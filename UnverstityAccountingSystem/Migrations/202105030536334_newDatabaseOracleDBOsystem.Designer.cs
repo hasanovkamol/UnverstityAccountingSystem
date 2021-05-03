@@ -7,13 +7,13 @@ namespace UnverstityAccountingSystem.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class HisobModels : IMigrationMetadata
+    public sealed partial class newDatabaseOracleDBOsystem : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(HisobModels));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(newDatabaseOracleDBOsystem));
         
         string IMigrationMetadata.Id
         {
-            get { return "202105010814038_HisobModels"; }
+            get { return "202105030536334_newDatabaseOracleDBOsystem"; }
         }
         
         string IMigrationMetadata.Source

@@ -7,13 +7,14 @@ namespace UnverstityAccountingSystem
 {
     public class DbContextEntity:DbContext
     {
-        public DbContextEntity():base("dbMUDatabase")
+        public DbContextEntity():base("name=dbEdicationSystem")
         {
-            
+           
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-           // throw new UnintentionalCodeFirstException();
+            modelBuilder.HasDefaultSchema("DBOSYSTEM");
+           
         }
         public DbSet<Bank> Banks { get; set; }
         public DbSet<User> Users { get; set; }

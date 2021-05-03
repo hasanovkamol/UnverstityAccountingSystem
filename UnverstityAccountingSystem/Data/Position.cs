@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace UnverstityAccountingSystem.Data
 {
-    [Table("Positions")]
+    [Table("Должности")]
     public class Position:DataModel
     {
         private int m_PositionId;

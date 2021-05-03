@@ -7,7 +7,7 @@ using System.Text;
 
 namespace UnverstityAccountingSystem.Data
 {
-    [Table("Valutas")]
+    [Table("Валутас")]
     public class Valuta:DataModel
     {
         private int m_ValutaId;

@@ -41,6 +41,8 @@ namespace UnverstityAccountingSystem.AllWindows
             BankAccount bankAccount = new BankAccount();
             bankAccount.ShowDialog();
             GetОrganization.BankAccount = GloblMain.bankaccount;
+            if (GetОrganization.BankAccount.Name == null) return;
+            else
             tbBankAccount.Text = GetОrganization.BankAccount.Name;
 
         }

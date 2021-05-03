@@ -41,7 +41,7 @@ namespace UnverstityAccountingSystem
         
         public static User SingIn(string login,string password)
         {
-            var _user = dbo.Users.Where(x => x.Login == login && x.Password == password).FirstOrDefault();
+            var _user = dbo.Users.ToList().Where(x => x.Login == login && x.Password == password).FirstOrDefault();
             GetUser = _user;
             return _user;
         }

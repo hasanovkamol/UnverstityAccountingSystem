@@ -9,7 +9,7 @@ namespace UnverstityAccountingSystem.AllWindows
         public RegistrationUser()
         {
             InitializeComponent();
-            if (GloblMain.dbo.GetОrganizations.Count() > 0) linkLabel2.Enabled = true;
+            if (GloblMain.dbo.GetОrganizations.ToList().Count() > 0) linkLabel2.Enabled = true;
             else linkLabel2.Enabled = false;
         }
 
@@ -60,13 +60,17 @@ namespace UnverstityAccountingSystem.AllWindows
               ,MessageBoxIcon.Information);
             if (dialog == DialogResult.Yes)
             {
-                GloblMain.dbo.Database.Delete();
+                int id = GloblMain.dbo.GetОrganizations.ToList().FirstOrDefault().OrganizationId;
+                GloblMain.dbo.GetОrganizations.Remove(GloblMain.dbo.GetОrganizations.Find(id));
+                GloblMain.dbo.SaveChanges();
 
             }
             else
             {
 
             }
+            if (GloblMain.dbo.GetОrganizations.ToList().Count() > 0) linkLabel2.Enabled = true;
+            else linkLabel2.Enabled = false;
 
 
         }

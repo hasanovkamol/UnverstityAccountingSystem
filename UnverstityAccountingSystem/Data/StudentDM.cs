@@ -7,7 +7,7 @@ using System.Text;
 
 namespace UnverstityAccountingSystem.Data
 {
-    [Table("StudentDMs")]
+    [Table("Студент")]
     public class StudentDM:DataModel
     {
         private int m_StudentId;

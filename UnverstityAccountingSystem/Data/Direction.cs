@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace UnverstityAccountingSystem.Data
 {
+    [Table("Направление")]
     public class Direction:DataModel
     {
         private int m_Id;

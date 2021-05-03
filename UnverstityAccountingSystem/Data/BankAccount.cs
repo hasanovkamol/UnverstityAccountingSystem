@@ -7,7 +7,7 @@ using System.Text;
 
 namespace UnverstityAccountingSystem.Data
 {
-    [Table("BankAccounts")]
+    [Table("Банксчета")]
     public class BankAccount:DataModel
     {
         private int m_BankAccountId;

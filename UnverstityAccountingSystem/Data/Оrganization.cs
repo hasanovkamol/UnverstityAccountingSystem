@@ -7,7 +7,7 @@ using System.Text;
 
 namespace UnverstityAccountingSystem.Data
 {
-    [Table("Оrganizations")]
+    [Table("Организации")]
     public class Оrganization:DataModel
     {
         private int m_OrganizationId;

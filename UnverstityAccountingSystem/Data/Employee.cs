@@ -10,7 +10,7 @@ using UnverstityAccountingSystem.Static;
 
 namespace UnverstityAccountingSystem.Data
 {
-    [Table("Employees")]
+    [Table("Сотрудники")]
     public class Employee:DataModel
     {
         private int m_EmployeeId;

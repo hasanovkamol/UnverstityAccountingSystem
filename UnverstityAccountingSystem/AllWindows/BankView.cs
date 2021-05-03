@@ -51,7 +51,11 @@ namespace UnverstityAccountingSystem.AllWindows
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            int id = int.Parse(dgBank.SelectedCells[0].FormattedValue.ToString());
+            GloblMain.dbo.Banks.Remove(GloblMain.dbo.Banks.Find(id));
+            GloblMain.dbo.SaveChanges();
+            MessageBox.Show("Удалить банк", "Удалить");
+            Refresh();
         }
     }
 }
